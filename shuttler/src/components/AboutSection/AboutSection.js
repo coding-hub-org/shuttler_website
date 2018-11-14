@@ -13,8 +13,8 @@ const aboutSection = props => {
   return (
     <div className="about">
       <AboutCard  image={clock} header={"TIMOTHY INGRAM"} text={"Never miss the shuttle ever again with our real-time tracking. Through the use of our app you can assure that you are never late for the shuttle again"}/>
-      <AboutCard  image={map} header={"TIMOTHY INGRAM"} text={"Differentiate and you stand out in a crowded marketplace. Present your uniqueness and ephasize your rare attributes."}/>
-      <AboutCard  image={slider} header={"TIMOTHY INGRAM"} text={"Differentiate and you stand out in a crowded marketplace. Present your uniqueness and ephasize your rare attributes."}/>
+      <AboutCard  image={map} header={"TIMOTHY INGRAM"} text={"Personalize your experience through our customizable notification system. Choose when and where you want to be notified"}/>
+      <AboutCard  image={slider} header={"TIMOTHY INGRAM"} text={"View where the shuttle is in real time through our in-app Map."}/>
 
     </div>
     
