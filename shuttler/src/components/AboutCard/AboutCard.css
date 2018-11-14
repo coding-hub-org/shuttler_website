@@ -1,3 +1,4 @@
+
 .wrapper{
     display: grid;
     grid-template-columns: auto;
@@ -19,5 +20,18 @@
     text-align: center;
 }
 .card{
+   
     padding: 30px;
+}
+@media only screen and (max-width: 650px){
+    .wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding: 20px;
+    
+    
+}
 }
