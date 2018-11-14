@@ -1,0 +1,118 @@
+
+
+.mobileHomePage{
+
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position:-10% 120%;
+    background-size: 140%;
+    background-color:white;
+    padding-top: 0%;
+    margin-bottom: 10%;
+    /* border-style: solid;
+    border-color: black; */
+    height:22em;
+    }
+
+
+
+.title{
+
+    color: #f2014b;
+
+}
+
+.containsTitle{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    font-family:cursive;
+    position:static;
+    text-align: center;
+
+
+}
+
+.phoneImg{
+
+    position:absolute;
+    padding-top: 145px;
+    margin: -70px -170px;
+    height: 700px;
+    width:350px;
+
+
+}
+
+@media (max-width: 350px) {
+   /* PUT CSS HERE TO ALTER WEBSITE TO SINGLE COLUMN */
+   .mobileHomePage{
+       background-size: 140%;
+       padding-top: 0%;
+       margin-bottom: 0%;
+       height:22em;
+       background-position:-10% 20%;
+
+       }
+}
+@media (min-width: 400px) {
+   .mobileHomePage{
+       background-size: 115%;
+       padding-top: 0%;
+       margin-bottom: 0%;
+       height:22em;
+       background-position:-95% 70%;
+
+       }
+}
+
+@media (min-width: 560px) {
+   .mobileHomePage{
+       background-size: 115%;
+       padding-top: 15%;
+       margin-bottom: 0%;
+       height:22em;
+       background-position:-95% 70%;
+
+       }
+}
+@media (min-width: 700px) {
+   .mobileHomePage{
+       background-size: 140%;
+       padding-top: 35%;
+       margin-bottom: 4%;
+       background-position:-14% 70%;
+       height:22em;
+       }
+}
+
+@media (min-width: 830px) {
+   .mobileHomePage{
+       background-size: 140%;
+       padding-top: 45%;
+       margin-bottom: 4%;
+       background-position:-14% 70%;
+       height:22em;
+       }
+}
+
+@media (min-width: 1000px) {
+   .mobileHomePage{
+       background-size: 140%;
+       padding-top: 55%;
+       margin-bottom: 3%;
+       height:22em;
+       }
+}
+
+@media (min-width: 1200px) {
+   .mobileHomePage{
+       background-size: 80%;
+       padding-top: 33%;
+       margin-bottom: 0%;
+       height:22em;
+       background-position:110% 110%;
+       }
+}
