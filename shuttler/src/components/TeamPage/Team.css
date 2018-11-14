@@ -1,0 +1,103 @@
+.containerTeam{
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+
+}
+
+
+.teamPage{
+
+    height: 500px;
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+    padding-top: 0%;
+    display: grid;
+
+
+}
+
+.shadowBox{
+height: 800px;
+width: 700px;
+box-shadow: 5px 5px 5px lightgrey;
+border-radius: 10%;
+display: grid;
+align-content: center;
+justify-content: center;
+padding-bottom: 20%;
+
+
+}
+
+.bottomBorder{
+
+    border-style: solid;
+    border-color: red;
+    height: 10px;
+    display: grid;
+}
+
+.containerTeam h1{
+
+    font-size: 360%;
+    color: grey;
+    text-align: center;
+    font-style: oblique;
+    padding-bottom: 0%;
+
+
+}
+.containerTeam h3{
+
+    font-size: 360%;
+    color: black;
+    text-align: center;
+    font-style: oblique;
+    padding-bottom: 5%;
+
+
+}
+
+.shadowBox h2{
+
+    font-size: 20px;
+    color: silver;
+    text-align: center;
+
+
+}
+.shadowBox h3{
+    margin-top:0%;
+    font-size: 360%;
+    color: black;
+    text-align: center;
+    font-style: oblique;
+
+
+
+}
+
+.imageDiv{
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.containerTeam img{
+
+    border-radius: 10%;
+
+}
+
+.alignImg{
+height: 500px;
+display: grid;
+justify-content: center;
+align-content: center;
+
+}
