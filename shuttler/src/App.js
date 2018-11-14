@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 import Page1 from "./components/Page1HomeMobile/Page1";
-import AboutSection from "./components/AboutSection/AboutSection"
+import AboutSection from "./components/AboutSection/AboutSection";
 import TeamPage from "./components/TeamPage/Team";
 
 class App extends Component {
@@ -33,8 +33,9 @@ class App extends Component {
         <Navbar navClickHandler={this.navToggleClickHandler} />
         <SideDrawer show={this.state.SideDrawerOpen} />
         {backdrop}
-        <main style={{ marginTop: "300px" }}>
+        <main>
           <Page1 />
+
           <AboutSection />
           <TeamPage />
         </main>
