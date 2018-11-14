@@ -1,0 +1,9 @@
+.about{
+    
+    display: grid;
+    margin: 8%;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    
+}
+

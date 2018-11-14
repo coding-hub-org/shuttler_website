@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 import Page1 from "./components/Page1HomeMobile/Page1";
+import AboutSection from "./components/AboutSection/AboutSection"
 
 class App extends Component {
   state = {
@@ -33,6 +34,7 @@ class App extends Component {
         {backdrop}
         <main style={{ marginTop: "64px" }}>
           <Page1 />
+          <AboutSection />
         </main>
       </div>
     );
