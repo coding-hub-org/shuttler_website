@@ -1,102 +1,94 @@
-
-
 .mobileHomePage {
-    height:calc(100vh - 70px);
-    display:grid;
-    justify-content: center;
-    align-content: center;
-    box-sizing: border-box;
-    padding-left: 30%;
-    padding-right: 30%;
-
+  height: calc(100vh - 70px);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 .title {
-    color: #f2014b;
+  color: #f2014b;
 }
 
 .containsTitle {
-    text-align: center;
-    margin-top: 30%;
+  text-align: center;
+  margin-top: 30%;
 }
 
 h1 {
-    font-size: 50px;
-    font-family: cursive;
-    position: static;
-    text-align: center;
-
+  font-size: 50px;
+  font-family: cursive;
+  position: static;
+  text-align: center;
 }
 
-.homePageImg{
-
-    margin-bottom: 20%;
+.homePageImg {
+  margin-bottom: 20%;
 }
 @media (min-width: 1000px) {
-    .homePageImg {
-        width: 900px;
-    }
-    h1 {
-        font-size: 60px;
-    }
+  .homePageImg {
+    width: 900px;
+  }
+  h1 {
+    font-size: 60px;
+  }
 }
 
 @media (max-width: 950px) {
-    .homePageImg {
-        width: 750px;
-    }
-    h1 {
-        font-size: 40px;
-    }
+  .homePageImg {
+    width: 750px;
+  }
+  h1 {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 750px) {
-    .homePageImg {
-        width: 650px;
-
-    }
-
+  .homePageImg {
+    width: 650px;
+  }
 }
 
 @media (max-width: 650px) {
-    .homePageImg {
-        width: 550px;
-    }
-    h1 {
-        font-size: 35px;
-    }
+  .homePageImg {
+    width: 550px;
+  }
+  h1 {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 550px) {
-    .homePageImg {
-        width: 450px;
-    }
-    h1 {
-        font-size: 35px;
-    }
+  .homePageImg {
+    width: 450px;
+  }
+  h1 {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 500px) {
-    .homePageImg {
-        width: 400px;
-    }
-
+  .homePageImg {
+    width: 400px;
+  }
 }
 
 @media (max-width: 440px) {
-    .homePageImg {
-        width: 350px;
-    }
-    h1 {
-        font-size: 30px;
-    }
+  .homePageImg {
+    width: 350px;
+  }
+  h1 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 370px) {
-    .homePageImg {
-        width: 300px;
-    }
-    h1 {
-        font-size: 20px;
-    }
+  .homePageImg {
+    width: 300px;
+  }
+  h1 {
+    font-size: 20px;
+  }
 }
