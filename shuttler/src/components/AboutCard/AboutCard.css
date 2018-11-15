@@ -7,8 +7,11 @@
     border-radius: 5px;
     padding: 20px;
     height: 100%;
-    
-    
+}
+@media only screen and (max-width: 650px) {
+    .card{
+        padding-top: 30px;
+    }
 }
 .wrapper img{
     margin: auto;
@@ -21,5 +24,6 @@
     text-align: center;
 }
 .card{
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }

@@ -9,11 +9,9 @@ import slider from "../assets/ic_map-1.png";
 const aboutSection = props => {
   return (
     <div>
-      <div className="header">
-        <h1>About</h1>
-      </div>
 
       <div className="about">
+        <h2 className="about-header">About</h2>
         <AboutCard
           image={clock}
           header={"TIMOTHY INGRAM"}
