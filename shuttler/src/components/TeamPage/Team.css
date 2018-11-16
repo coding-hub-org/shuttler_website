@@ -29,6 +29,20 @@ display: grid;
 align-content: center;
 justify-content: center;
 padding-bottom: 20%;
+margin-top: 80%;
+
+}
+
+.shadowBox h1{
+
+    padding-top: 20%;
+}
+
+.shadowBox h2{
+
+margin-left: 10%;
+margin-right: 10%;
+padding-bottom:7%;
 
 
 }

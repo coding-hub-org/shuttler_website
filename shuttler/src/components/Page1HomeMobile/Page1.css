@@ -20,7 +20,7 @@
     margin-top: 30%;
 }
 
-h1 {
+.containsTitle h1 {
     font-size: 50px;
     font-family: cursive;
     position: static;
@@ -36,7 +36,7 @@ h1 {
     .homePageImg {
         width: 900px;
     }
-    h1 {
+    .containsTitle h1 {
         font-size: 60px;
     }
 }
@@ -45,7 +45,7 @@ h1 {
     .homePageImg {
         width: 750px;
     }
-    h1 {
+    .containsTitle h1 {
         font-size: 40px;
     }
 }
@@ -62,7 +62,7 @@ h1 {
     .homePageImg {
         width: 550px;
     }
-    h1 {
+    .containsTitle h1 {
         font-size: 35px;
     }
 }
@@ -71,7 +71,7 @@ h1 {
     .homePageImg {
         width: 450px;
     }
-    h1 {
+    .containsTitle h1 {
         font-size: 35px;
     }
 }
@@ -87,7 +87,7 @@ h1 {
     .homePageImg {
         width: 350px;
     }
-    h1 {
+    .containsTitle h1 {
         font-size: 30px;
     }
 }
@@ -96,7 +96,7 @@ h1 {
     .homePageImg {
         width: 300px;
     }
-    h1 {
+    .containsTitle h1 {
         font-size: 20px;
     }
 }

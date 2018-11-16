@@ -5,14 +5,16 @@ const team=(props)=>{
 
 return(
 <div className="containerTeam" >
-    <h1>Team</h1>
-    <div className="alignImg">
-    <img src={require("./teamPic.jpg")} alt="teamPicture" width="600px"/>
-    </div>
+
 <div className="teamPage">
 
 
 <div className="shadowBox">
+<h1>Team</h1>
+
+<div className="alignImg">
+<img src={require("./teamPic.jpg")} alt="teamPicture" width="600px"/>
+</div>
 
     <h3>Coding-Hub</h3>
 
