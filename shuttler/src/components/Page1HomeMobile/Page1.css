@@ -1,23 +1,20 @@
-
-
 .mobileHomePage {
-    height:calc(100vh - 70px);
-    display:grid;
-    justify-content: center;
-    align-content: center;
-    box-sizing: border-box;
-    padding-left: 30%;
-    padding-right: 30%;
-
+  height: calc(100vh - 70px);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 .title {
-    color: #f2014b;
+  color: #f2014b;
 }
 
 .containsTitle {
-    text-align: center;
-    margin-top: 30%;
+  text-align: center;
+  margin-top: 30%;
 }
 
 .containsTitle h1 {
@@ -28,9 +25,8 @@
 
 }
 
-.homePageImg{
-
-    margin-bottom: 20%;
+.homePageImg {
+  margin-bottom: 20%;
 }
 @media (min-width: 1000px) {
     .homePageImg {
@@ -51,11 +47,9 @@
 }
 
 @media (max-width: 750px) {
-    .homePageImg {
-        width: 650px;
-
-    }
-
+  .homePageImg {
+    width: 650px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -77,10 +71,9 @@
 }
 
 @media (max-width: 500px) {
-    .homePageImg {
-        width: 400px;
-    }
-
+  .homePageImg {
+    width: 400px;
+  }
 }
 
 @media (max-width: 440px) {

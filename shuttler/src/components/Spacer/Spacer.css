@@ -1,0 +1,9 @@
+.Spacer-component{
+    height: 300px;
+}
+
+@media only screen and (max-width: 650px){
+    .Spacer-component{
+        height: 0px;
+    }
+}
