@@ -5,8 +5,10 @@
     grid-template-rows: 1fr .25fr 1fr;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 100%;
+    
 }
 @media only screen and (max-width: 650px) {
     .card{
@@ -26,4 +28,5 @@
 .card{
     padding-left: 30px;
     padding-right: 30px;
+    
 }

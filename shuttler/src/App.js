@@ -7,6 +7,7 @@ import Page1 from "./components/Page1HomeMobile/Page1";
 import AboutSection from "./components/AboutSection/AboutSection";
 import Spacer from "./components/Spacer/Spacer"
 import TeamPage from "./components/TeamPage/Team";
+import ContactPage from './components/ContactSection/Contact';
 
 class App extends Component {
   state = {
@@ -40,6 +41,9 @@ class App extends Component {
           <Spacer />
           <AboutSection />
           {/* <TeamPage /> */}
+          <Spacer />
+          <ContactPage /> 
+          
         </main>
       </div>
     );
