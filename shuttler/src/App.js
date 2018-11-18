@@ -6,6 +6,7 @@ import Page1 from "./components/Page1HomeMobile/Page1";
 import AboutSection from "./components/AboutSection/AboutSection";
 import Spacer from "./components/Spacer/Spacer";
 import TeamPage from "./components/TeamPage/Team";
+import ContactPage from './components/ContactSection/Contact';
 
 class App extends Component {
   state = {
@@ -38,8 +39,15 @@ class App extends Component {
           <Page1 />
           <Spacer />
           <AboutSection />
+<<<<<<< HEAD
           <TeamPage />
 
+=======
+          {/* <TeamPage /> */}
+          <Spacer />
+          <ContactPage /> 
+          
+>>>>>>> dd6357e6060ac8021ca72f98f0ac0980393ecc3c
         </main>
       </div>
     );
