@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-
 import Navbar from "./components/Navbar/Navbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 import Page1 from "./components/Page1HomeMobile/Page1";
 import AboutSection from "./components/AboutSection/AboutSection";
-import Spacer from "./components/Spacer/Spacer"
+import Spacer from "./components/Spacer/Spacer";
 import TeamPage from "./components/TeamPage/Team";
 
 class App extends Component {
@@ -39,7 +38,8 @@ class App extends Component {
           <Page1 />
           <Spacer />
           <AboutSection />
-          {/* <TeamPage /> */}
+          <TeamPage />
+
         </main>
       </div>
     );
