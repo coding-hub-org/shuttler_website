@@ -39,15 +39,11 @@ class App extends Component {
           <Page1 />
           <Spacer />
           <AboutSection />
-<<<<<<< HEAD
-          <TeamPage />
-
-=======
+          <Spacer />
           {/* <TeamPage /> */}
           <Spacer />
-          <ContactPage /> 
-          
->>>>>>> dd6357e6060ac8021ca72f98f0ac0980393ecc3c
+          <ContactPage />
+
         </main>
       </div>
     );
