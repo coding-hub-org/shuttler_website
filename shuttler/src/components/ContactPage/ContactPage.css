@@ -1,0 +1,6 @@
+.ContactPage-component {
+  display: grid;
+  margin: 8%;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
+}

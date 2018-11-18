@@ -6,7 +6,11 @@ import Page1 from "./components/Page1HomeMobile/Page1";
 import AboutSection from "./components/AboutSection/AboutSection";
 import Spacer from "./components/Spacer/Spacer";
 import TeamPage from "./components/TeamPage/Team";
+<<<<<<< Updated upstream
 import ContactPage from './components/ContactSection/Contact';
+=======
+import ContactPage from "./components/ContactPage/ContactPage";
+>>>>>>> Stashed changes
 
 class App extends Component {
   state = {
@@ -41,9 +45,13 @@ class App extends Component {
           <AboutSection />
           <Spacer />
           {/* <TeamPage /> */}
+<<<<<<< Updated upstream
           <Spacer />
           <ContactPage />
 
+=======
+          <ContactPage />
+>>>>>>> Stashed changes
         </main>
       </div>
     );
