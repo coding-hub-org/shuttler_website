@@ -1,9 +1,9 @@
 .toggle_button {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr;
 
-  justify-content: space-around;
-  height: 24px;
+  height: 32px;
   width: 30px;
   background: transparent;
   border: none;
@@ -12,11 +12,28 @@
   box-sizing: border-box;
 }
 
-.toggle_button_line {
+.toggle_button_line_one {
   width: 30px;
   min-height: 2px;
   height: 2px;
   background: #f2014b;
+  grid-row: 1/2;
+  margin-bottom: 13%;
+}
+.toggle_button_line_two {
+  width: 30px;
+  min-height: 2px;
+
+  background: #f2014b;
+  grid-row: 2/3;
+}
+.toggle_button_line_three {
+  width: 30px;
+  min-height: 2px;
+  height: 2px;
+  background: #f2014b;
+  grid-row: 3/4;
+  margin-top: 13%;
 }
 
 .toggle_button:focus {
