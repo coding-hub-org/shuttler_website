@@ -41,8 +41,8 @@ class App extends Component {
           <AboutSection />
           <Spacer />
           <Spacer />
-          <Spacer />
-          {/* <TeamPage /> */}
+          <Spacer/>
+          <TeamPage />
           <Spacer />
 
           <Spacer />
