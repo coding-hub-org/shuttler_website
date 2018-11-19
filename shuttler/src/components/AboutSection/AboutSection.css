@@ -11,12 +11,13 @@
   color: #292929bd;
   text-align: center;
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 862px) {
   .about {
     display: grid;
     margin: auto;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto;
+    max-width: 600px;
   }
   .about-header {
     grid-column: 1/2;
