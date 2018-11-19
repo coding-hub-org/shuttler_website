@@ -4,21 +4,12 @@
   grid-template-rows: auto auto;
   grid-template-columns: auto auto auto;
 }
-<<<<<<< Updated upstream
-.about-header{
-    grid-column: 1/4;
-    font-size: 57px;
-    
-    color: #292929bd;
-    text-align: center;
-=======
 .about-header {
   grid-column: 1/4;
   font-size: 57px;
 
   color: #292929bd;
   text-align: center;
->>>>>>> Stashed changes
 }
 @media only screen and (max-width: 650px) {
   .about {
