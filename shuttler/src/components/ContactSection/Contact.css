@@ -10,8 +10,15 @@
   padding-top: 27px;
   padding-right: 4px;
 }
-.Contact-component p {
+.Contact-component .labels {
   font-size: 24px;
+  
+}
+
+.Contact-component .email-head{
+  font-size: 27px;
+  padding-top: 10px;
+  margin-bottom: 3px;
 }
 .Contact-component h3 {
   text-align: center;
@@ -20,7 +27,9 @@
 .Contact-component .mail{
   border-radius: 10px;
   border: 1px solid #cccaca;
-  width: 250px;
+  width: 350px;
+  height: 20px;
+  font-size: 20px;
 
   padding-left: 3px;
 }
@@ -30,16 +39,43 @@
  
 }
 
+
 .Contact-component .message{
   border-radius: 30px;
   border: 1px solid #cccaca;
-  width: 250px;
-  height: 200px;
+  width: 550px;
+  height: 300px;
   resize: none;
   padding-left: 22px;
+  font-size: 20px;
 }
 
 .Contact-component .message:focus{
   outline: none;
  
+}
+
+.Contact-component form{
+  text-align: center;
+}
+
+@media only screen and (max-width: 862px) {
+  .Contact-component .mail{
+    border-radius: 10px;
+    border: 1px solid #cccaca;
+    width: 250px;
+    height: 20px;
+    font-size: 20px;
+  
+    padding-left: 3px;
+  }
+  .Contact-component .message{
+    border-radius: 30px;
+    border: 1px solid #cccaca;
+    width: 250px;
+    height: 200px;
+    resize: none;
+    padding-left: 22px;
+    font-size: 20px;
+  }
 }

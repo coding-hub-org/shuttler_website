@@ -14,16 +14,17 @@ const contact = props => {
       <div className="phone-sec">
         <img className="phone" src={Phone} alt="" />
 
-        <p>(845)-464-3900</p>
+        <p className="labels">(845)-464-3900</p>
       </div>
       <div className="phone-sec">
         <img className="phone" src={Phone} alt="" />
 
-        <p>psucoders@plattsburgh.edu</p>
+        <p className="labels">psucoders@plattsburgh.edu</p>
       </div>
       <div className="phone-sec">
 
         <form action="">
+          <p className="email-head">email</p>
           <input className="mail" type="text"/> <br/> <br/>
           <textarea className="message" type="text"/>
         </form>
