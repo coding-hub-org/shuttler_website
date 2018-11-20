@@ -21,6 +21,12 @@ const contact = props => {
 
         <p>psucoders@plattsburgh.edu</p>
       </div>
+      <div className="phone-sec">
+
+        <form action="">
+          <input type="text"/>
+        </form>
+      </div>
     </div>
   );
 };

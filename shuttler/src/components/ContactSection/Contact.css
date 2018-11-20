@@ -16,3 +16,14 @@
 .Contact-component h3 {
   text-align: center;
 }
+
+.Contact-component input{
+  border-radius: 10px;
+  border: 1px solid rgb(95, 94, 94);
+  width: 250px;
+}
+
+.Contact-component input:focus{
+  outline: none;
+ 
+}
