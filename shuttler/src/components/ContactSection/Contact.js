@@ -24,7 +24,8 @@ const contact = props => {
       <div className="phone-sec">
 
         <form action="">
-          <input type="text"/>
+          <input className="mail" type="text"/> <br/> <br/>
+          <textarea className="message" type="text"/>
         </form>
       </div>
     </div>

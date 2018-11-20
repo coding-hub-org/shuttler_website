@@ -17,13 +17,29 @@
   text-align: center;
 }
 
-.Contact-component input{
+.Contact-component .mail{
   border-radius: 10px;
-  border: 1px solid rgb(95, 94, 94);
+  border: 1px solid #cccaca;
   width: 250px;
+
+  padding-left: 3px;
 }
 
-.Contact-component input:focus{
+.Contact-component .mail:focus{
+  outline: none;
+ 
+}
+
+.Contact-component .message{
+  border-radius: 30px;
+  border: 1px solid #cccaca;
+  width: 250px;
+  height: 200px;
+  resize: none;
+  padding-left: 22px;
+}
+
+.Contact-component .message:focus{
   outline: none;
  
 }
