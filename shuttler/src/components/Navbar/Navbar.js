@@ -4,6 +4,8 @@ import "../SideDrawer/DrawerToggleButton";
 import "./Navbar.css";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import { goToAnchor } from "react-scrollable-anchor";
+import { removeHash } from "react-scrollable-anchor";
+// clear URL hash
 
 const navbar = props => {
   return (

@@ -11,16 +11,19 @@ import AboutSection from "./components/AboutSection/AboutSection";
 import Spacer from "./components/Spacer/Spacer";
 import TeamPage from "./components/TeamPage/Team";
 import Contact from "./components/ContactSection/Contact";
-import spacer from "./components/Spacer/Spacer";
+import { goToTop } from "react-scrollable-anchor";
+
+// scroll to top of the page
 
 class App extends Component {
-  // componentDidMount() {
-  //   configureAnchors({
-  //     offset: -10,
-  //     scrollDuration: 800,
-  //     keepLastAnchorHash: false
-  //   });
-  // }
+  componentDidMount() {
+    configureAnchors({
+      offset: -10,
+      scrollDuration: 800,
+      keepLastAnchorHash: false
+    });
+    goToTop();
+  }
   state = {
     SideDrawerOpen: false
   };
@@ -48,38 +51,44 @@ class App extends Component {
         {backdrop}
         <main>
           <ScrollableAnchor>
-            <div />
+            <div>
+              <span>l</span>
+            </div>
           </ScrollableAnchor>
           <ScrollableAnchor id={"home-scroll"}>
-            <div />
+            <div>
+              <span>test</span>
+            </div>
           </ScrollableAnchor>
           <Page1 />
-
           <ScrollableAnchor id={"about-scroll"}>
-            <div />
+            <div>
+              <AboutSection />
+            </div>
           </ScrollableAnchor>
           <Spacer />
           <Spacer />
 
-          <AboutSection />
           <Spacer />
           <ScrollableAnchor id={"team-scroll"}>
-            <div />
+            <div>
+              <TeamPage />
+            </div>
           </ScrollableAnchor>
           <Spacer />
           <Spacer />
           <Spacer />
-          <TeamPage />
+
           <Spacer />
           <Spacer />
           <ScrollableAnchor id={"contact-scroll"}>
-            <div />
+            <div>
+              <Contact />
+            </div>
           </ScrollableAnchor>
           <Spacer />
 
           <Spacer />
-
-          <Contact />
         </main>
       </div>
     );
