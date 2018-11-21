@@ -29,7 +29,15 @@
 
 .side-drawer a {
   color: #f2014b;
+  font-size: 35px;
   text-decoration: none;
+}
+@media only screen and (max-width: 650px) {
+  .side-drawer a {
+    color: #f2014b;
+    font-size: 27px;
+    text-decoration: none;
+  }
 }
 
 .side-drawer a:hover {
