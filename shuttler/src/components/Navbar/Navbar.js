@@ -19,7 +19,7 @@ const navbar = props => {
           </a> */}
           <img
             onClick={() => {
-              goToAnchor("home");
+              goToAnchor("home-scroll", false);
             }}
             src={require("./ic_logo.png")}
             alt=""

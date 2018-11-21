@@ -14,9 +14,13 @@ import Contact from "./components/ContactSection/Contact";
 import spacer from "./components/Spacer/Spacer";
 
 class App extends Component {
-  componentWillMount() {
-    configureAnchors({ offset: 70, scrollDuration: 800 });
-  }
+  // componentDidMount() {
+  //   configureAnchors({
+  //     offset: -10,
+  //     scrollDuration: 800,
+  //     keepLastAnchorHash: false
+  //   });
+  // }
   state = {
     SideDrawerOpen: false
   };
@@ -38,12 +42,15 @@ class App extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
-      <div style={{ height: "100%" }} className="App">
+      <div className="App">
         <Navbar navClickHandler={this.navToggleClickHandler} />
         <SideDrawer show={this.state.SideDrawerOpen} />
         {backdrop}
         <main>
-          <ScrollableAnchor id={"home"}>
+          <ScrollableAnchor>
+            <div />
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"home-scroll"}>
             <div />
           </ScrollableAnchor>
           <Page1 />
