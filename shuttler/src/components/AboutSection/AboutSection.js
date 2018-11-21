@@ -8,8 +8,7 @@ import slider from "../assets/ic_map-1.png";
 
 const aboutSection = props => {
   return (
-    <div>
-
+    <div className="About-component">
       <div className="about">
         <h2 className="about-header">About</h2>
         <AboutCard

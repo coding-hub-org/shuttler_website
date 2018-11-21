@@ -11,6 +11,7 @@ import AboutSection from "./components/AboutSection/AboutSection";
 import Spacer from "./components/Spacer/Spacer";
 import TeamPage from "./components/TeamPage/Team";
 import Contact from "./components/ContactSection/Contact";
+import spacer from "./components/Spacer/Spacer";
 
 class App extends Component {
   componentWillMount() {
@@ -45,13 +46,14 @@ class App extends Component {
           <ScrollableAnchor id={"home"}>
             <div />
           </ScrollableAnchor>
-          <Spacer />
           <Page1 />
-          <Spacer />
-          <Spacer />
+
           <ScrollableAnchor id={"about-scroll"}>
             <div />
           </ScrollableAnchor>
+          <Spacer />
+          <Spacer />
+
           <AboutSection />
           <Spacer />
           <ScrollableAnchor id={"team-scroll"}>
