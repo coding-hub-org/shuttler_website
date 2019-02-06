@@ -5,27 +5,48 @@
   justify-content: center;
 }
 
+.Contact-component {
+  display: flex;
+  flex-direction: column;
+  width: auto !important;
+
+  justify-content: center;
+}
+
 .Contact-component .phone {
   height: 24px;
   padding-top: 27px;
   padding-right: 4px;
 }
+.Contact-component .email {
+  height: 24px;
+  padding-top: 27px;
+  padding-right: 4px;
+}
+.Contact-component .email-head {
+  padding: 15px;
+  margin: 0;
+}
 .Contact-component .labels {
   font-size: 24px;
-  
 }
 
-.Contact-component .email-head{
+.Contact-component .email-head {
   font-size: 27px;
-  padding-top: 10px;
-  margin-top: 0px;
-  margin-bottom: 3px;
+  margin-bottom: 0;
 }
 .Contact-component h3 {
   text-align: center;
+  justify-content: center;
+  margin: 0;
 }
 
-.Contact-component .mail{
+.Contact-component h1 {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.Contact-component .mail {
   border-radius: 10px;
   border: 1px solid #cccaca;
   width: 350px;
@@ -35,13 +56,11 @@
   padding-left: 3px;
 }
 
-.Contact-component .mail:focus{
+.Contact-component .mail:focus {
   outline: none;
- 
 }
 
-
-.Contact-component .message{
+.Contact-component .message {
   border-radius: 30px;
   border: 1px solid #cccaca;
   width: 550px;
@@ -51,26 +70,40 @@
   font-size: 20px;
 }
 
-.Contact-component .message:focus{
+.Contact-component .message:focus {
   outline: none;
- 
 }
 
-.Contact-component form{
+.Contact-component form {
   text-align: center;
 }
 
+#icon {
+  font-size: 5vw;
+  display: inline-flex;
+  color: #f2014b;
+  border-style: outset;
+  border-radius: 12px;
+  border-width: 2px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 1px;
+  border-color: gray;
+}
+
 @media only screen and (max-width: 862px) {
-  .Contact-component .mail{
+  .Contact-component .mail {
     border-radius: 10px;
     border: 1px solid #cccaca;
     width: 250px;
     height: 20px;
     font-size: 20px;
-  
+
     padding-left: 3px;
   }
-  .Contact-component .message{
+
+  .Contact-component .message {
     border-radius: 30px;
     border: 1px solid #cccaca;
     width: 320px;
@@ -78,5 +111,38 @@
     resize: none;
     padding-left: 22px;
     font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .Contact-component .message {
+    border-radius: 10px;
+    border: 1px solid #cccaca;
+    width: 290px;
+    height: 150px;
+    font-size: 20px;
+
+    padding-left: 3px;
+  }
+  .Contact-component .labels {
+    font-size: 15px;
+  }
+  .Contact-component .email-head {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .Contact-component h3 {
+    font-size: 12px;
+  }
+  .Contact-component .about-header {
+    font-size: 36px;
+  }
+
+  .Contact-component .phone-sec img {
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  .Contact-component #phoneNumDiv {
+    margin-right: 28px;
   }
 }

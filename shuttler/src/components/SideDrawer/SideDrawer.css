@@ -46,3 +46,10 @@
 .side-drawer a:active {
   color: #f20149bb;
 }
+
+@media (max-width: 330px) {
+  .side-drawer a {
+    margin: 0.3rem 0;
+    font-size: 20px;
+  }
+}

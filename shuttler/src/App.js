@@ -18,7 +18,7 @@ import { goToTop } from "react-scrollable-anchor";
 class App extends Component {
   componentDidMount() {
     configureAnchors({
-      offset: -10,
+      offset: -5,
       scrollDuration: 800,
       keepLastAnchorHash: false
     });
@@ -50,44 +50,23 @@ class App extends Component {
         <SideDrawer show={this.state.SideDrawerOpen} />
         {backdrop}
         <main>
-          <ScrollableAnchor>
-            <div>
-              <span>l</span>
-            </div>
-          </ScrollableAnchor>
-          <ScrollableAnchor id={"home-scroll"}>
-            <div>
-              <span>test</span>
-            </div>
-          </ScrollableAnchor>
           <Page1 />
-          <ScrollableAnchor id={"about-scroll"}>
-            <div>
-              <AboutSection />
-            </div>
-          </ScrollableAnchor>
+          <div>
+            <AboutSection />
+          </div>
           <Spacer />
           <Spacer />
-
           <Spacer />
-          <ScrollableAnchor id={"team-scroll"}>
-            <div>
-              <TeamPage />
-            </div>
-          </ScrollableAnchor>
+          <div>
+            <TeamPage />
+          </div>
           <Spacer />
           <Spacer />
           <Spacer />
 
-          <Spacer />
-          <Spacer />
-          <ScrollableAnchor id={"contact-scroll"}>
-            <div>
-              <Contact />
-            </div>
-          </ScrollableAnchor>
-          <Spacer />
-
+          <div>
+            <Contact />
+          </div>
           <Spacer />
         </main>
       </div>

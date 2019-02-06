@@ -1,28 +1,25 @@
 .containerTeam {
-display: grid;
-width: auto !important;
+  display: grid;
+  width: auto !important;
 
-justify-content: center;
+  justify-content: center;
 }
 
 .teamPage {
-  /* height: 500px; */
   background-color: white;
-
   padding-top: 0%;
 }
 
 .shadowBox {
-  /* height: 850px; */
   width: 700px;
   box-shadow: 5px 5px 5px lightgrey;
   border-radius: 10%;
   display: grid;
   align-content: center;
   justify-content: center;
-  padding-bottom: 20%;
-  margin:auto;
-
+  padding-bottom: 5%;
+  margin: auto;
+  padding-top: 0;
 }
 
 .shadowBox h2 {
@@ -43,7 +40,7 @@ justify-content: center;
   color: black;
   text-align: center;
   font-style: oblique;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 .shadowBox h2 {
@@ -57,6 +54,7 @@ justify-content: center;
   color: black;
   text-align: center;
   font-style: oblique;
+  padding-top: 20px;
 }
 
 .containerTeam img {
@@ -68,48 +66,24 @@ justify-content: center;
   display: grid;
   justify-content: center;
   align-content: center;
-
 }
 
 @media (min-width: 1000px) {
-  .alignImg img {
-    /* width: 650px; */
-  }
   .alignImg {
     font-size: 500px;
   }
 }
 
 @media (max-width: 950px) {
-  .alignImg img {
-    /* width: 600px; */
-  }
   .alignImg h1 {
     font-size: 40px;
   }
-
-}
-
-@media (max-width: 800px) {
-  .alignImg img {
-    /* width: 620px; */
-  }
-
-  .shadowBox{
-
-      /* width:670px; */
-  }
-
 }
 
 @media (max-width: 700px) {
-
-
   .shadowBox {
     width: 750px;
-
   }
-
 }
 
 @media (max-width: 850px) {
@@ -122,9 +96,8 @@ justify-content: center;
 
   .shadowBox {
     width: 600px;
-    padding-top: 19%;
+    margin-top: 15%;
   }
-
 }
 
 @media (max-width: 550px) {
@@ -140,10 +113,6 @@ justify-content: center;
   .shadowBox {
     width: 450px;
   }
-
-  .teamPage {
-    padding-bottom: 20%;
-  }
 }
 
 @media (max-width: 500px) {
@@ -158,8 +127,6 @@ justify-content: center;
   .shadowBox {
     width: 440px;
   }
-
-
 }
 
 @media (max-width: 460px) {
@@ -186,14 +153,9 @@ justify-content: center;
   .shadowBox {
     width: 420px;
   }
-
-  .teamPage {
-    padding-bottom: 10%;
-  }
 }
 
 @media (max-width: 420px) {
-
   .alignImg img {
     width: 300px;
   }
@@ -206,7 +168,7 @@ justify-content: center;
   }
 
   .shadowBox {
-    width: 370px;
+    width: 320px;
   }
   .shadowBox h1 {
     font-size: 50px;
@@ -217,8 +179,6 @@ justify-content: center;
   .shadowBox h3 {
     font-size: 50px;
   }
-
-
 }
 
 @media (max-width: 380px) {
@@ -243,8 +203,27 @@ justify-content: center;
   .shadowBox {
     width: 350px;
   }
+}
+@media (max-width: 330px) {
+  .alignImg img {
+    width: 300px;
+    padding-bottom: 0%;
+  }
+  .shadowBox h1 {
+    font-size: 50px;
+  }
+  .shadowBox h2 {
+    font-size: 20px;
+  }
+  .shadowBox h3 {
+    font-size: 50px;
+  }
 
-  .teamPage {
-    padding-bottom: 10%;
+  .alignImg {
+    height: 200px;
+  }
+
+  .shadowBox {
+    width: 300px;
   }
 }
