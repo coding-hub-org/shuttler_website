@@ -1,41 +1,12 @@
 .toggle_button {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr 1fr 1fr;
-
-  height: 32px;
-  width: 30px;
-  background: transparent;
-  border: none;
   cursor: pointer;
-  padding: 0;
-  box-sizing: border-box;
 }
 
-.toggle_button_line_one {
-  width: 30px;
-  min-height: 2px;
-  height: 2px;
-  background: #f2014b;
-  grid-row: 1/2;
-  margin-bottom: 13%;
-}
-.toggle_button_line_two {
-  width: 30px;
-  min-height: 2px;
-
-  background: #f2014b;
-  grid-row: 2/3;
-}
+.toggle_button_line_one,
+.toggle_button_line_two,
 .toggle_button_line_three {
   width: 30px;
-  min-height: 2px;
   height: 2px;
   background: #f2014b;
-  grid-row: 3/4;
-  margin-top: 13%;
-}
-
-.toggle_button:focus {
-  outline: none;
+  margin-bottom: 5px;
 }

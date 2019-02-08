@@ -9,7 +9,7 @@ import ScrollableAnchor from "react-scrollable-anchor";
 
 const aboutSection = props => {
   return (
-    <ScrollableAnchor id={"about-scroll"}>
+    <ScrollableAnchor id={"About"}>
       <div className="About-component">
         <div className="about">
           <h2 className="about-header">About</h2>

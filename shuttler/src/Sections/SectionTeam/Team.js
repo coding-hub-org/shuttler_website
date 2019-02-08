@@ -4,7 +4,7 @@ import ScrollableAnchor, { configureAnchors } from "react-scrollable-anchor";
 
 const team = props => {
   return (
-    <ScrollableAnchor id={"team-scroll"}>
+    <ScrollableAnchor id={"Team"}>
       <div className="containerTeam">
         <div className="teamPage">
           <div className="shadowBox">

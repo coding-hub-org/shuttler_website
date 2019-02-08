@@ -1,31 +1,56 @@
-import React from "react";
+import React, { Component } from "react";
 
-import "../SideDrawer/DrawerToggleButton";
+import SideDrawer from "./SideDrawer/SideDrawer";
+import Toolbar from "./Toolbar/Toolbar";
 import "./Navbar.css";
-import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
-import { goToAnchor } from "react-scrollable-anchor";
-import { removeHash } from "react-scrollable-anchor";
+import Backdrop from "../Backdrop/Backdrop";
 
-const navbar = props => {
-  return (
-    <header className="navbar">
-      <nav className="navbar_navigation">
-        <div>
-          <DrawerToggleButton click={props.navClickHandler} />
-        </div>
-        <div className="spacer" />
-        <div className="navbar_logo">
-          <img
-            onClick={() => {
-              goToAnchor("home-scroll", false);
-            }}
-            src={require("./ic_logo.png")}
-            alt=""
-          />
-        </div>
-      </nav>
-    </header>
-  );
-};
+class Navbar extends Component {
+  state = {
+    SideDrawerOpen: false
+  };
 
-export default navbar;
+  navItems = [
+    { id: "item1", value: "ABOUT", link: "#About" },
+    { id: "item2", value: "TEAM", link: "#Team" },
+    { id: "item3", value: "CONTACT US", link: "#Contact" }
+  ];
+
+  drawerToggleClickHandler = () => {
+    this.setState(prevState => {
+      return {
+        SideDrawerOpen: !prevState.SideDrawerOpen
+      };
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({ SideDrawerOpen: false });
+  };
+
+  render() {
+    let backdrop;
+
+    if (this.state.SideDrawerOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />;
+    }
+    return (
+      <div className="navbar">
+        <Toolbar
+          drawerClickHandle={this.drawerToggleClickHandler}
+          navItems={this.navItems}
+          buttonText="CONTACT US"
+        />
+
+        <SideDrawer
+          show={this.state.SideDrawerOpen}
+          navItems={this.navItems}
+          buttonText="CONTACT US"
+        />
+        {backdrop}
+      </div>
+    );
+  }
+}
+
+export default Navbar;

@@ -56,7 +56,7 @@ class contact extends React.Component {
   }
   render() {
     return (
-      <ScrollableAnchor id={"contact-scroll"}>
+      <ScrollableAnchor id={"Contact"}>
         <div className="Contact-component">
           <h1 className="about-header">Contact Us</h1>
           <h3>
