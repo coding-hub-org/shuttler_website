@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./Page1.css";
 import ImageFile from "../../assets/ic_cellphone.png";
 import ScrollableAnchor, { configureAnchors } from "react-scrollable-anchor";
+import GooglePlayDownload from "../../assets/google-play-badge.png";
+import AppStore from "../../assets/AppStore.png";
 
 class Page1 extends Component {
   render() {
@@ -16,10 +18,10 @@ class Page1 extends Component {
             </div>
             <div className="download-buttons">
               <div className="download-button__playstore">
-                GOOGLE PLAY DOWNLOAD
+                <img src={GooglePlayDownload} alt="" />
               </div>
-              <div className="download-button__playstore">
-                APP STORE DOWNLOAD
+              <div className="download-button__appstore">
+                <img src={AppStore} alt="" />
               </div>
             </div>
           </div>

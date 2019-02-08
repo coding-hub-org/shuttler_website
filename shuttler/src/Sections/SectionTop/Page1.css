@@ -29,6 +29,21 @@
   /* justify-content: flex-end; */
 }
 
+.download-buttons {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.download-button__playstore > img {
+  width: 180px;
+  margin-right: 20px;
+}
+
+.download-button__appstore > img {
+  width: 160px;
+}
+
 @media (min-width: 1000px) {
   .containsTitle h1 {
     font-size: 60px;
