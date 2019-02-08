@@ -10,13 +10,9 @@
 }
 
 .about-header {
-  grid-column: 1/4;
+  padding: 50px 0px;
   font-size: 65px;
   color: #292929bd;
-}
-
-.aboutcard-component {
-  /* height: 60vh; */
 }
 
 @media only screen and (max-width: 862px) {
@@ -31,7 +27,6 @@
     max-width: 600px;
   }
   .about-header {
-    grid-column: 1/2;
     text-align: center;
     font-size: 57px;
     padding-left: 0;

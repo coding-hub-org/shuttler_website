@@ -1,59 +1,87 @@
-.Contact-component .phone-sec {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 50px;
-  justify-content: center;
-}
-
 .Contact-component {
-  display: flex;
-  flex-direction: column;
-  width: auto !important;
-
+  margin: 0px 200px;
   justify-content: center;
-}
-
-.Contact-component .phone {
-  height: 24px;
-  padding-top: 27px;
-  padding-right: 4px;
-}
-.Contact-component .email {
-  height: 24px;
-  padding-top: 27px;
-  padding-right: 4px;
-}
-.Contact-component .email-head {
-  padding: 15px;
-  margin: 0;
-}
-.Contact-component .labels {
-  font-size: 24px;
-}
-
-.Contact-component .email-head {
-  font-size: 27px;
-  margin-bottom: 0;
-}
-.Contact-component h3 {
-  text-align: center;
-  justify-content: center;
-  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .Contact-component > h1 {
   font-size: 65px;
+  padding: 50px 0px;
+  color: #292929bd;
+  margin: 0px;
+}
+
+.Contact-component > .contact-body {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+.Contact-component .phone-sec {
+  margin: 100px 0 30px 0;
+}
+
+.Contact-component .phone-sec,
+.Contact-component .email-sec {
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
   color: #292929bd;
 }
 
-.Contact-component .mail {
-  border-radius: 10px;
-  border: 1px solid #cccaca;
-  width: 350px;
-  height: 20px;
-  font-size: 20px;
+.Contact-component .phone-image {
+  height: 24px;
+}
 
-  padding-left: 3px;
+.Contact-component .email-image {
+  height: 18px;
+}
+
+.Contact-component .labels {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.sendButton-contactform {
+  display: grid;
+  width: 100%;
+  padding: 20px;
+  justify-content: flex-end;
+}
+
+.Contact-component .email-head,
+.Contact-component .message-head {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.Contact-component h3 {
+  justify-content: center;
+  margin: 0;
+  line-height: 35px;
+
+  color: #292929bd;
+}
+
+.contact-form > form > .email-input {
+  border-radius: 30px;
+  margin-top: 20px;
+  border: 1px solid #cccaca;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.contact-form > form > .message-input {
+  border-radius: 30px;
+  margin-top: 20px;
+  border: 1px solid #cccaca;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  height: 200px;
 }
 
 .Contact-component .mail:focus {
@@ -72,10 +100,6 @@
 
 .Contact-component .message:focus {
   outline: none;
-}
-
-.Contact-component form {
-  text-align: center;
 }
 
 #icon {

@@ -1,0 +1,8 @@
+.SendButton-component {
+  color: white;
+  text-align: center;
+  width: 100px;
+  padding: 20px 30px;
+  background: #f2014b;
+  border-radius: 30px;
+}
