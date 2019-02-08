@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   align-items: center;
-  height: calc(100vh - 125px);
+  min-height: calc(100vh - 125px);
   grid-gap: 10%;
 }
 
@@ -15,23 +15,24 @@
   display: grid;
   justify-content: flex-end;
   justify-self: flex-end;
-  width: 600px;
+  margin-top: -100px;
+  width: 700px;
 }
 
 .containsTitle h1 {
-  font-size: 50px;
+  font-size: 70px;
   position: static;
 }
 
 .homePageImg {
   display: grid;
-  justify-self: center;
+  justify-self: flex-end;
   /* justify-content: flex-end; */
 }
 
 .download-buttons {
   display: flex;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   align-items: center;
 }
 
@@ -44,68 +45,41 @@
   width: 160px;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1600px) {
   .containsTitle h1 {
-    font-size: 60px;
+    font-size: 50px;
+  }
+  .containsTitle {
+    width: 500px;
   }
 }
 
-@media (max-width: 950px) {
-  .homePageImg {
-    width: 750px;
+@media (max-width: 1300px) {
+  .containsTitle {
+    width: 400px;
+    grid-gap: 5%;
+  }
+  .Page1-section {
+    margin: 0 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .download-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 250px;
+  }
+  .download-button__appstore {
+    margin-left: 10px;
   }
   .containsTitle h1 {
     font-size: 40px;
   }
 }
 
-@media (max-width: 750px) {
-  .homePageImg {
-    width: 650px;
-  }
-  .container {
-    margin-top: 2%;
-  }
-}
-
-@media (max-width: 650px) {
-  .homePageImg {
-    width: 550px;
-  }
-  .containsTitle h1 {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 550px) {
-  .homePageImg {
-    width: 450px;
-  }
-  .containsTitle h1 {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 500px) {
-  .homePageImg {
-    width: 400px;
-  }
-}
-
-@media (max-width: 440px) {
-  .homePageImg {
-    width: 350px;
-  }
-  .containsTitle h1 {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 370px) {
-  .homePageImg {
-    width: 300px;
-  }
-  .containsTitle h1 {
-    font-size: 20px;
+@media (max-width: 1100px) {
+  .Page1-section {
+    grid-gap: 5%;
   }
 }

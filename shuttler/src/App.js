@@ -1,16 +1,14 @@
 import React, { Component } from "react";
-import SectionTop from "./Sections/SectionTop/Page1";
 import SectionAbout from "./Sections/SectionAbout/AboutSection";
 import SectionTeam from "./Sections/SectionTeam/Team";
 import SectionContact from "./Sections/SectionContact/Contact";
-import SectionNav from "./Sections/SectionNav/SectionNav";
+import Background from "./components/Background/Background";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <SectionNav />
-        <SectionTop />
+        <Background />
         <SectionAbout />
         <SectionTeam />
         <SectionContact />

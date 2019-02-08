@@ -1,3 +1,9 @@
 .Navbar-section {
   margin: 0px 200px;
 }
+
+@media (max-width: 1300px) {
+  .Navbar-section {
+    margin: 0 150px;
+  }
+}

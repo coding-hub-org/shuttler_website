@@ -1,6 +1,6 @@
 .About-component {
   margin: 0px 200px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about {
@@ -13,6 +13,24 @@
   padding: 50px 0px;
   font-size: 65px;
   color: #292929bd;
+}
+
+@media (max-width: 1500px) {
+  .about {
+    grid-column-gap: 3%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .About-component {
+    margin: 0px 150px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 862px) {

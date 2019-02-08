@@ -1,5 +1,5 @@
 .toggle-button {
-  color: #000;
+  color: white;
   font-size: 20px;
   cursor: pointer;
 }
@@ -11,5 +11,11 @@
 @media (max-width: 550px) {
   .toggle-button {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .toggle-button {
+    color: black;
   }
 }

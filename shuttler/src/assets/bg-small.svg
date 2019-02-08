@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1076" viewBox="0 0 1920 1076">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_104" data-name="Rectangle 104" width="699.518" height="1076" fill="#fff"/>
+    </clipPath>
+    <filter id="shuttler_web_background" x="1185.118" y="-65.219" width="808.379" height="1210.086" filterUnits="userSpaceOnUse">
+      <feOffset dy="1.824" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="22.348" result="blur"/>
+      <feFlood flood-color="#de1351"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="bg-small" transform="translate(-11453 -2505)">
+    <rect id="Rectangle_105" data-name="Rectangle 105" width="1920" height="1076" transform="translate(11453 2505)" fill="none"/>
+    <g id="bg" transform="translate(3101.482 772)">
+      <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(9572 1733)" clip-path="url(#clip-path)">
+        <g transform="matrix(1, 0, 0, 1, -1220.48, 0)" filter="url(#shuttler_web_background)">
+          <path id="shuttler_web_background-2" data-name="shuttler_web_background" d="M215.926,1520.793v-4.2l233.4-542.377L241.77,444.793H890.219V1520.786Z" transform="translate(1036.24 -444.79)" fill="#ff0a55"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
