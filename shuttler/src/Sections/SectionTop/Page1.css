@@ -1,9 +1,10 @@
 .Page1-section {
-  margin: 100px 200px;
+  margin: 0px 200px;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   align-items: center;
-  height: 100vh - 200px;
+  height: calc(100vh - 125px);
+  /* box-sizing: border-box; */
   grid-gap: 10%;
 }
 

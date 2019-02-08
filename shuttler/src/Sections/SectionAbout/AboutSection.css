@@ -1,19 +1,22 @@
+.About-component {
+  margin: 0px 200px;
+  height: 100vh;
+}
+
 .about {
   display: grid;
-  margin: 8%;
-  grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 8%;
 }
 
 .about-header {
   grid-column: 1/4;
   font-size: 65px;
   color: #292929bd;
-  text-align: center;
 }
 
-.About-component {
-  margin-top: 10%;
+.aboutcard-component {
+  /* height: 60vh; */
 }
 
 @media only screen and (max-width: 862px) {

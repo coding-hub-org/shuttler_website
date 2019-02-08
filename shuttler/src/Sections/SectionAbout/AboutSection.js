@@ -11,29 +11,36 @@ const aboutSection = props => {
   return (
     <ScrollableAnchor id={"About"}>
       <div className="About-component">
+        <h2 className="about-header">ABOUT</h2>
+
         <div className="about">
-          <h2 className="about-header">ABOUT</h2>
-          <AboutCard
-            image={clock}
-            header={"Convenience"}
-            text={
-              "Never miss the shuttle ever again with our real-time tracking. Through the use of our app you can assure that you are never late for the shuttle again"
-            }
-          />
-          <AboutCard
-            image={map}
-            header={"Real Time Notifications"}
-            text={
-              "Personalize your experience through our customizable notification system. Choose when and where you want to be notified"
-            }
-          />
-          <AboutCard
-            image={slider}
-            header={"Easy to Use"}
-            text={
-              "View where the shuttle is in real time through our in-app Map."
-            }
-          />
+          <div className="aboutcard-component">
+            <AboutCard
+              image={clock}
+              header={"CONVENIENCE"}
+              text={
+                "Never miss the shuttle ever again with our real-time tracking. Through the use of our app you can assure that you are never late for the shuttle again"
+              }
+            />
+          </div>
+          <div className="aboutcard-component">
+            <AboutCard
+              image={map}
+              header={"REAL TIME NOTIFICATIONS"}
+              text={
+                "Personalize your experience through our customizable notification system. Choose when and where you want to be notified"
+              }
+            />
+          </div>
+          <div className="aboutcard-component">
+            <AboutCard
+              image={slider}
+              header={"EASY TO USE"}
+              text={
+                "View where the shuttle is in real time through our in-app Map."
+              }
+            />
+          </div>
         </div>
       </div>
     </ScrollableAnchor>

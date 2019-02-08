@@ -1,15 +1,33 @@
-.wrapper {
+.card {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr 0.25fr 1fr;
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
   height: 100%;
-  margin: auto;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
   max-width: 600px;
 }
+
+.card-contents {
+  display: grid;
+  grid-gap: 5%;
+  padding: 100px 50px;
+}
+
+.card-contents > img {
+  justify-self: center;
+}
+
+.header > b {
+  color: #404954;
+  font-size: 16px;
+}
+
+.text {
+  color: #a1abb6;
+}
+
 @media only screen and (max-width: 862px) {
   .card {
     padding-top: 30px;
