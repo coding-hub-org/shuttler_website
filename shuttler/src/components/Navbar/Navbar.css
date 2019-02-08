@@ -15,9 +15,7 @@
 
   padding: 0 1rem;
 }
-.navbar .main-logo {
-  /* background: url(ic_logo.png) no-repeat; */
-}
+
 .navbar_logo a {
   color: #f2014b;
   text-decoration: none;
@@ -47,5 +45,5 @@
 .navbar_logo img {
   display: block;
   width: 20%;
-  padding-left: 97px;
+  /* padding-left: 97px; */
 }

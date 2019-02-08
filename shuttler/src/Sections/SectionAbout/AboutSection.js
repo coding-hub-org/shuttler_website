@@ -12,7 +12,7 @@ const aboutSection = props => {
     <ScrollableAnchor id={"About"}>
       <div className="About-component">
         <div className="about">
-          <h2 className="about-header">About</h2>
+          <h2 className="about-header">ABOUT</h2>
           <AboutCard
             image={clock}
             header={"Convenience"}

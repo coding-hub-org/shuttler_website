@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import SideDrawer from "../../components/SideDrawer/SideDrawer";
 import Backdrop from "../../components/Backdrop/Backdrop";
+import "./SectionNav.css";
 
 class SectionNav extends Component {
   state = {
@@ -26,7 +27,7 @@ class SectionNav extends Component {
     }
 
     return (
-      <div>
+      <div className="Navbar-section">
         <Navbar navClickHandler={this.navToggleClickHandler} />
         <SideDrawer show={this.state.SideDrawerOpen} />
         {backdrop}

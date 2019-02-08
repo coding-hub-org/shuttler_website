@@ -1,14 +1,10 @@
-.mobileHomePage {
-  height: calc(100vh - 70px);
+.Page1-section {
+  margin: 100px 200px;
   display: grid;
-  justify-content: center;
-  align-content: center;
-  box-sizing: border-box;
-  padding-left: 30%;
-  padding-right: 30%;
-}
-.container {
-  margin-top: 20%;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  height: 100vh - 200px;
+  grid-gap: 10%;
 }
 
 .title {
@@ -16,24 +12,23 @@
 }
 
 .containsTitle {
-  text-align: center;
-  margin-top: 30%;
+  display: grid;
+  justify-content: flex-end;
+  justify-self: flex-end;
+  width: 600px;
 }
 
 .containsTitle h1 {
   font-size: 50px;
-
   position: static;
-  text-align: center;
 }
 
 .homePageImg {
-  margin-bottom: 20%;
+  display: grid;
+  /* justify-content: flex-end; */
 }
+
 @media (min-width: 1000px) {
-  .homePageImg {
-    width: 900px;
-  }
   .containsTitle h1 {
     font-size: 60px;
   }
