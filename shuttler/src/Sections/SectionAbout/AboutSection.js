@@ -1,11 +1,11 @@
 import React from "react";
 
-import AboutCard from "../AboutCard/AboutCard";
+import AboutCard from "../../components/AboutCard/AboutCard";
 import "./AboutSection.css";
-import clock from "../assets/ic_clock.png";
-import map from "../assets/ic_map.png";
-import slider from "../assets/ic_map-1.png";
-import ScrollableAnchor, { configureAnchors } from "react-scrollable-anchor";
+import clock from "../../assets/ic_clock.png";
+import map from "../../assets/ic_map.png";
+import slider from "../../assets/ic_map-1.png";
+import ScrollableAnchor from "react-scrollable-anchor";
 
 const aboutSection = props => {
   return (

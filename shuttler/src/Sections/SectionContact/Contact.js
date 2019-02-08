@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./Contact.css";
-import Email from "../assets/email.png";
-import Phone from "../assets/phone.png";
+import Email from "../../assets/email.png";
+import Phone from "../../assets/phone.png";
 import firebase from "firebase";
 import ScrollableAnchor, { configureAnchors } from "react-scrollable-anchor";
 

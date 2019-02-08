@@ -8,7 +8,6 @@ const spacer = props => {
     <div className="Spacer-component">
       
     </div>
-    
   );
 };
 
