@@ -41,9 +41,9 @@
   margin: 0;
 }
 
-.Contact-component h1 {
-  margin-bottom: 20px;
-  margin-top: 0;
+.Contact-component > h1 {
+  font-size: 65px;
+  color: #292929bd;
 }
 
 .Contact-component .mail {

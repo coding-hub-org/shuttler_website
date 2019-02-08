@@ -1,71 +1,51 @@
-.containerTeam {
-  display: grid;
-  width: auto !important;
-
-  justify-content: center;
+.team-component {
+  margin: 0px 200px;
+  height: 100vh;
 }
 
-.teamPage {
-  background-color: white;
-  padding-top: 0%;
-}
-
-.shadowBox {
-  width: 700px;
-  box-shadow: 5px 5px 5px lightgrey;
-  border-radius: 10%;
+.team-component > .shadowBox {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
   display: grid;
-  align-content: center;
-  justify-content: center;
-  padding-bottom: 5%;
-  margin: auto;
-  padding-top: 0;
+  grid-template-columns: 1.5fr 1fr;
+  justify-items: flex-start;
+  align-items: center;
+  grid-column-gap: 50px;
+  padding: 50px 100px;
 }
 
 .shadowBox h2 {
-  margin-left: 10%;
-  margin-right: 10%;
   padding-bottom: 7%;
 }
 
-.containerTeam h1 {
-  font-size: 360%;
-  color: grey;
-  text-align: center;
-  font-style: oblique;
-  padding-bottom: 0%;
-}
-.containerTeam h3 {
-  font-size: 360%;
-  color: black;
-  text-align: center;
-  font-style: oblique;
-  padding-bottom: 3%;
+.team-component h1 {
+  font-size: 65px;
+  font-weight: 600;
+  color: #292929bd;
 }
 
 .shadowBox h2 {
   font-size: 20px;
   color: silver;
-  text-align: center;
+  line-height: 35px;
 }
-.shadowBox h3 {
+
+.shadowBox .shadowBox-description h3 {
   margin-top: 0%;
-  font-size: 360%;
-  color: black;
-  text-align: center;
-  font-style: oblique;
+  font-size: 40px;
+  color: #323c47;
   padding-top: 20px;
 }
 
-.containerTeam img {
-  border-radius: 10%;
-}
-
-.alignImg {
-  height: 500px;
+.shadowBox .alignImg > img {
+  width: 450px;
+  height: 400px;
   display: grid;
   justify-content: center;
   align-content: center;
+  border-radius: 15px;
+
+  object-fit: cover;
 }
 
 @media (min-width: 1000px) {
