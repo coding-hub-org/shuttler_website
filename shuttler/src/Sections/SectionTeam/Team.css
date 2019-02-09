@@ -114,75 +114,8 @@
   }
 }
 
-@media (max-width: 420px) {
-  .alignImg img {
-    width: 300px;
-  }
-
-  .alignImg {
-    height: 270px;
-  }
-  .alignImg h1 {
-    font-size: 30px;
-  }
-
-  .shadowBox {
-    width: 320px;
-  }
-  .shadowBox h1 {
-    font-size: 50px;
-  }
-  .shadowBox h2 {
-    font-size: 20px;
-  }
-  .shadowBox h3 {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 380px) {
-  .alignImg img {
-    width: 300px;
-    padding-bottom: 0%;
-  }
-  .shadowBox h1 {
-    font-size: 50px;
-  }
-  .shadowBox h2 {
-    font-size: 20px;
-  }
-  .shadowBox h3 {
-    font-size: 50px;
-  }
-
-  .alignImg {
-    height: 200px;
-  }
-
-  .shadowBox {
-    width: 350px;
-  }
-}
-@media (max-width: 330px) {
-  .alignImg img {
-    width: 300px;
-    padding-bottom: 0%;
-  }
-  .shadowBox h1 {
-    font-size: 50px;
-  }
-  .shadowBox h2 {
-    font-size: 20px;
-  }
-  .shadowBox h3 {
-    font-size: 50px;
-  }
-
-  .alignImg {
-    height: 200px;
-  }
-
-  .shadowBox {
-    width: 300px;
+@media (max-width: 500px) {
+  .team-component {
+    margin: 0 50px;
   }
 }

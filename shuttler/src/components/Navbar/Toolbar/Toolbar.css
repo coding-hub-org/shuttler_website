@@ -136,31 +136,3 @@
     display: none;
   }
 }
-
-@media (max-width: 700px) {
-  .toolbar_logo > a > img {
-    width: 180px;
-  }
-  .toolbar_logo {
-    margin-top: 54px;
-  }
-}
-
-@media (max-width: 550px) {
-  .toolbar_logo > a > img {
-    width: 140px;
-  }
-  .toolbar_logo {
-    margin-top: 57px;
-  }
-}
-
-@media (max-width: 450px) {
-  .toolbar_logo {
-    margin-left: 40px;
-  }
-
-  .toolbar_navigation {
-    margin-right: 40px;
-  }
-}

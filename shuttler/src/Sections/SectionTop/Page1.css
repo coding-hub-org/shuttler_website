@@ -75,6 +75,7 @@
   }
   .containsTitle h1 {
     font-size: 40px;
+    margin-top: 50px;
   }
 }
 
@@ -110,6 +111,7 @@
   .Page1-section {
     display: flex;
     flex-direction: column;
+    margin: 0 100px;
   }
   .containsTitle {
     display: flex;
@@ -121,8 +123,14 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
+  .containsTitle h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
   .Page1-section {
-    margin: 0 100px;
+    margin: 0 50px;
   }
 }

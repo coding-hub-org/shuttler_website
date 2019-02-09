@@ -60,3 +60,9 @@
     font-size: 45px;
   }
 }
+
+@media (max-width: 500px) {
+  .About-component {
+    margin: 0 50px;
+  }
+}

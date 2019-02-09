@@ -189,6 +189,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .Contact-component {
+    margin: 0 50px;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .Contact-component .message {
     border-radius: 10px;
