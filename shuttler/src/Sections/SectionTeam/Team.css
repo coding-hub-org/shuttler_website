@@ -1,6 +1,6 @@
 .team-component {
   margin: 0px 200px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .team-component > .shadowBox {
@@ -50,35 +50,39 @@
   object-fit: cover;
 }
 
-@media (min-width: 1000px) {
-  .alignImg {
-    font-size: 500px;
+@media (max-width: 1400px) {
+  .team-component > .shadowBox {
+    grid-column-gap: 30px;
+    padding: 50px;
   }
 }
 
-@media (max-width: 950px) {
-  .alignImg h1 {
-    font-size: 40px;
+@media (max-width: 1300px) {
+  .team-component {
+    margin: 0 150px;
   }
 }
 
-@media (max-width: 700px) {
-  .shadowBox {
-    width: 750px;
+@media (max-width: 1150px) {
+  .shadowBox .alignImg > img {
+    width: 350px;
+    height: 300px;
+  }
+  .shadowBox h2 {
+    font-size: 17px;
   }
 }
 
-@media (max-width: 850px) {
-  .alignImg img {
-    width: 500px;
-  }
-  .alignImg h1 {
-    font-size: 35px;
+@media (max-width: 1050px) {
+  .team-component > .shadowBox {
+    grid-template-columns: 1fr;
   }
 
-  .shadowBox {
-    width: 600px;
-    margin-top: 15%;
+  .team-component > .shadowBox > .shadowBox-description {
+    text-align: center;
+  }
+  .shadowBox .alignImg {
+    margin: 0 auto;
   }
 }
 
