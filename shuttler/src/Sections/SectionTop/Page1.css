@@ -83,3 +83,46 @@
     grid-gap: 5%;
   }
 }
+
+@media (max-width: 950px) {
+  .Page1-section {
+    grid-template-columns: 1fr;
+    /* justify-content: center; */
+  }
+  .containsTitle {
+    margin: 0;
+    justify-self: center;
+    text-align: center;
+  }
+  .download-buttons {
+    justify-self: center;
+  }
+  .download-button__appstore {
+    margin-left: -20px;
+  }
+  .homePageImg {
+    justify-self: center;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .Page1-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .containsTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .homePageImg {
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 850px) {
+  .Page1-section {
+    margin: 0 100px;
+  }
+}

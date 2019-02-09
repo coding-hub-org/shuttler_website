@@ -137,26 +137,6 @@
   }
 }
 
-@media (max-width: 900px) {
-  .toolbar_navigation {
-    margin-right: 80px;
-  }
-
-  .toolbar_logo {
-    margin-left: 80px;
-  }
-}
-
-@media (max-width: 800px) {
-  .toolbar_navigation {
-    margin-right: 50px;
-  }
-
-  .toolbar_logo {
-    margin-left: 50px;
-  }
-}
-
 @media (max-width: 700px) {
   .toolbar_logo > a > img {
     width: 180px;

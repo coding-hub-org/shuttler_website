@@ -7,3 +7,9 @@
     margin: 0 150px;
   }
 }
+
+@media (max-width: 800px) {
+  .Navbar-section {
+    margin: 0 100px;
+  }
+}

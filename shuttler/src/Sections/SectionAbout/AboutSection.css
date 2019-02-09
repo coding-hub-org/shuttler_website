@@ -1,6 +1,7 @@
 .About-component {
   margin: 0px 200px;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .about {
@@ -30,12 +31,13 @@
 @media (max-width: 1000px) {
   .about {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
   }
 }
 
-@media only screen and (max-width: 862px) {
+@media only screen and (max-width: 850px) {
   .About-component {
-    margin-top: 5%;
+    margin: 0 100px;
   }
   .about {
     display: grid;
@@ -46,8 +48,15 @@
   }
   .about-header {
     text-align: center;
+    margin-bottom: 0;
     font-size: 57px;
     padding-left: 0;
     color: #292929bd;
+  }
+}
+
+@media (max-width: 750px) {
+  .about-header {
+    font-size: 45px;
   }
 }

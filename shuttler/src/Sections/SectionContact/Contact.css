@@ -149,28 +149,46 @@
   }
 }
 
-@media only screen and (max-width: 862px) {
-  .Contact-component .mail {
-    border-radius: 10px;
-    border: 1px solid #cccaca;
-    width: 250px;
-    height: 20px;
-    font-size: 20px;
-
-    padding-left: 3px;
+@media only screen and (max-width: 850px) {
+  .Contact-component > h1 {
+    text-align: center;
   }
-
-  .Contact-component .message {
-    border-radius: 30px;
-    border: 1px solid #cccaca;
-    width: 320px;
-    height: 200px;
-    resize: none;
-    padding-left: 22px;
-    font-size: 20px;
-    margin-bottom: 5px;
+  .Contact-component {
+    margin: 0 100px;
   }
 }
+
+@media (max-width: 750px) {
+  .Contact-component > h1 {
+    font-size: 45px;
+  }
+  .Contact-component h3 {
+    font-size: 16px;
+  }
+  .Contact-component .labels {
+    font-size: 16px;
+  }
+
+  .Contact-component .phone-sec > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Contact-component .email-sec > img {
+    height: 16px;
+  }
+
+  .Contact-component .email-head,
+  .Contact-component .message-head {
+    font-size: 16px;
+  }
+
+  .contact-form > form > .email-input,
+  .contact-form > form > .message-input {
+    font-size: 12px;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .Contact-component .message {
     border-radius: 10px;

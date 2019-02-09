@@ -29,6 +29,18 @@
   color: #a1abb6;
 }
 
+.card > .card-contents > * {
+  text-align: center;
+}
+
+.card > .card-contents {
+  padding: 100px 0px;
+}
+.card {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 @media (max-width: 1500px) {
   .card-contents {
     padding: 100px 0;
@@ -42,21 +54,11 @@
   }
 }
 
-@media only screen and (max-width: 862px) {
+@media only screen and (max-width: 850px) {
   .card {
-    padding-top: 30px;
+    padding: 50px;
   }
-}
-.wrapper img {
-  margin: auto;
-}
-.header {
-  text-align: center;
-}
-.text {
-  text-align: center;
-}
-.card {
-  padding-left: 30px;
-  padding-right: 30px;
+  .card > .card-contents {
+    padding: 0;
+  }
 }
