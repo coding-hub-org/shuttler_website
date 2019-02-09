@@ -119,3 +119,25 @@
     margin: 0 50px;
   }
 }
+
+@media (max-width: 450px) {
+  .shadowBox .alignImg > img {
+    max-width: 200px;
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .team-component h1 {
+    font-size: 35px;
+  }
+  .shadowBox .shadowBox-description h3 {
+    font-size: 25px;
+  }
+  .shadowBox h2 {
+    font-size: 12px;
+  }
+  .team-component > .shadowBox {
+    padding: 50px 30px;
+  }
+}

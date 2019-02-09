@@ -134,3 +134,24 @@
     margin: 0 50px;
   }
 }
+
+@media (max-width: 500px) {
+  .containsTitle {
+    width: auto;
+  }
+  .containsTitle h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .download-button__playstore > img {
+    width: 140px;
+  }
+  .download-button__appstore > img {
+    width: 125px;
+  }
+  .homePageImg > img {
+    width: 200px;
+  }
+}

@@ -66,3 +66,19 @@
     margin: 0 50px;
   }
 }
+
+@media (max-width: 400px) {
+  .about-header {
+    font-size: 35px;
+  }
+  .header > b {
+    font-size: 14px;
+  }
+  .card-contents > .text {
+    font-size: 12px;
+  }
+  .card-contents > img {
+    width: 90px;
+    height: 90px;
+  }
+}
