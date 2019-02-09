@@ -1,18 +1,21 @@
 import React, { Component } from "react";
-import SectionAbout from "./Sections/SectionAbout/AboutSection";
-import SectionTeam from "./Sections/SectionTeam/Team";
-import SectionContact from "./Sections/SectionContact/Contact";
-import Background from "./components/Background/Background";
+import Main from './Sections/Main/Main';
+import Maps from './Sections/Maps/Maps';
+
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Background />
-        <SectionAbout />
-        <SectionTeam />
-        <SectionContact />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Switch>
+            <Route path="/" exact component={Main} />
+            <Route path="/else/" component={Maps} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+      
     );
   }
 }
