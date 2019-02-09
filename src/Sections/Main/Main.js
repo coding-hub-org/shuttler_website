@@ -7,7 +7,7 @@ import Background from "../../components/Background/Background";
 class Main extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Background />
         <SectionAbout />
         <SectionTeam />
