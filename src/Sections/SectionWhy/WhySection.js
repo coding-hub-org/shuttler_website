@@ -2,9 +2,6 @@ import React from "react";
 
 import AboutCard from "../../components/AboutCard/AboutCard";
 import "./WhySection.css";
-import clock from "../../assets/ic_clock.png";
-import map from "../../assets/ic_map.png";
-import slider from "../../assets/ic_map-1.png";
 
 import convenienceImg from "../../assets/convenience-img.png";
 import realtimeImg from "../../assets/realtime-img.png";
