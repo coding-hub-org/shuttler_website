@@ -1,40 +1,46 @@
 import React from "react";
 
 import AboutCard from "../../components/AboutCard/AboutCard";
-import "./AboutSection.css";
+import "./WhySection.css";
 import clock from "../../assets/ic_clock.png";
 import map from "../../assets/ic_map.png";
 import slider from "../../assets/ic_map-1.png";
-import ScrollableAnchor from "react-scrollable-anchor";
 
-const aboutSection = props => {
+import convenienceImg from "../../assets/convenience-img.png";
+import realtimeImg from "../../assets/realtime-img.png";
+import easyuseImg from "../../assets/easyuse-img.png";
+
+
+import ScrollableAnchor from "react-scrollable-anchor";
+import Title from "../../components/Title/Title";
+
+const WhySection = props => {
   return (
     <ScrollableAnchor id={"About"}>
-      <div className="About-component">
-        <h2 className="about-header">ABOUT</h2>
-
-        <div className="about">
-          <div className="aboutcard-component">
+      <div className="why-section">
+        <Title text={"Why Shuttler?"}/>
+        <div className="why">
+          <div className="whycard-component">
             <AboutCard
-              image={clock}
+              image={convenienceImg}
               header={"CONVENIENCE"}
               text={
                 "Never miss the shuttle ever again with our real-time tracking. Through the use of our app you can assure that you are never late for the shuttle again"
               }
             />
           </div>
-          <div className="aboutcard-component">
+          <div className="whycard-component">
             <AboutCard
-              image={map}
+              image={easyuseImg}
               header={"REAL TIME NOTIFICATIONS"}
               text={
                 "Personalize your experience through our customizable notification system. Choose when and where you want to be notified"
               }
             />
           </div>
-          <div className="aboutcard-component">
+          <div className="whycard-component">
             <AboutCard
-              image={slider}
+              image={realtimeImg}
               header={"EASY TO USE"}
               text={
                 "View where the shuttle is in real time through our in-app Map."
@@ -47,4 +53,4 @@ const aboutSection = props => {
   );
 };
 
-export default aboutSection;
+export default WhySection;

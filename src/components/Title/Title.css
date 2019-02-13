@@ -1,0 +1,18 @@
+.title-component {
+    overflow: auto;
+    margin-bottom: 2em;
+}
+
+.title-component h1 {
+    color: #FF0A55;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.title-component h1 span {
+    height: 2.5em;
+    width: 15px;
+    background-color: #FF0A55;
+    margin-right: 20px;
+}

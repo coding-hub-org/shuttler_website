@@ -1,52 +1,51 @@
-.About-component {
+.why-section {
   margin: 0px 200px;
-  min-height: 100vh;
   box-sizing: border-box;
 }
 
-.about {
+.why {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 8%;
 }
 
-.about-header {
+.why-header {
   padding: 50px 0px;
   font-size: 65px;
   color: #292929bd;
 }
 
 @media (max-width: 1500px) {
-  .about {
+  .why {
     grid-column-gap: 3%;
   }
 }
 
 @media (max-width: 1300px) {
-  .About-component {
+  .why-section {
     margin: 0px 150px;
   }
 }
 
 @media (max-width: 1000px) {
-  .about {
+  .why {
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
   }
 }
 
 @media only screen and (max-width: 850px) {
-  .About-component {
+  .why-section {
     margin: 0 100px;
   }
-  .about {
+  .why {
     display: grid;
     margin: auto;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto;
     max-width: 600px;
   }
-  .about-header {
+  .why-header {
     text-align: center;
     margin-bottom: 0;
     font-size: 57px;
@@ -56,19 +55,19 @@
 }
 
 @media (max-width: 750px) {
-  .about-header {
+  .why-header {
     font-size: 45px;
   }
 }
 
 @media (max-width: 500px) {
-  .About-component {
+  .why-section {
     margin: 0 50px;
   }
 }
 
 @media (max-width: 400px) {
-  .about-header {
+  .why-header {
     font-size: 35px;
   }
   .header > b {
