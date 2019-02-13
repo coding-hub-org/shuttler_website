@@ -4,6 +4,7 @@ import "./Contact.css";
 import Email from "../../assets/email.png";
 import Phone from "../../assets/phone.png";
 import firebase from "firebase";
+import Title from "../../components/Title/Title";
 import ScrollableAnchor, { configureAnchors } from "react-scrollable-anchor";
 import SendButton from "../../components/SendButton/SendButton";
 
@@ -55,11 +56,12 @@ class contact extends React.Component {
       projectId: "shuttlewebsite"
     });
   }
+
   render() {
     return (
       <ScrollableAnchor id={"Contact"}>
         <div className="Contact-component">
-          <h1 className="contact-header">CONTACT US</h1>
+          <Title text={"Contact Us"}/>
           <div className="contact-body">
             <div className="contact-description">
               <h3>
