@@ -3,6 +3,9 @@ import React from "react";
 import "./Contact.css";
 import Email from "../../assets/email.png";
 import Phone from "../../assets/phone.png";
+import ThankYou from "../../assets/thankyou-img.png";
+import Smile from "../../assets/smile-img.png";
+
 import firebase from "firebase";
 import Title from "../../components/Title/Title";
 import ScrollableAnchor, { configureAnchors } from "react-scrollable-anchor";
@@ -104,6 +107,10 @@ class contact extends React.Component {
                 </div>
               </form>
             </div>
+          </div>
+          <div className={"thankyou-section"}>  
+            <img className={"thankyou-section-phone"} src={ThankYou} alt=""/>
+            <h1>THANK YOU <img src={Smile} alt=""/></h1>
           </div>
         </div>
       </ScrollableAnchor>

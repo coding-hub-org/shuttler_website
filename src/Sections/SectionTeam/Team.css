@@ -1,5 +1,6 @@
 .team-component {
   margin: 0px 200px;
+  margin-bottom: 8em;
 }
 
 .team-component > .shadowBox {
