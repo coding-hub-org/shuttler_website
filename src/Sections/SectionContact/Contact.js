@@ -68,7 +68,7 @@ class contact extends React.Component {
           <div className="contact-body">
             <div className="contact-description">
               <h3>
-                IF YOU HAVE ANY COMMENTS OR SUGESTIONS PLEASE CALL US OR SEND US
+                IF YOU HAVE ANY COMMENTS OR SUGGESTIONS PLEASE CALL US OR SEND US
                 AN EMAIL
               </h3>
 

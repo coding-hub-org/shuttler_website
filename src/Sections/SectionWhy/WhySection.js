@@ -22,7 +22,7 @@ const WhySection = props => {
               image={convenienceImg}
               header={"CONVENIENCE"}
               text={
-                "Never miss the shuttle ever again with our real-time tracking. Through the use of our app you can assure that you are never late for the shuttle again"
+                "Never miss the shuttle ever again with our real-time tracking. Through the use of our app you can assure that you are never late for the shuttle again."
               }
             />
           </div>
@@ -31,7 +31,7 @@ const WhySection = props => {
               image={easyuseImg}
               header={"REAL TIME NOTIFICATIONS"}
               text={
-                "Personalize your experience through our customizable notification system. Choose when and where you want to be notified"
+                "Personalize your experience through our customizable notification system. Choose when and where you want to be notified."
               }
             />
           </div>
