@@ -33,7 +33,7 @@ class contact extends React.Component {
 
   handleSubmit = event => {
     const { email, emailMessage } = this.state;
-
+    console.log("LIFE IS GOOD");
     const db = firebase.firestore();
 
     this.setState({
@@ -53,11 +53,11 @@ class contact extends React.Component {
   };
 
   componentDidMount() {
-    firebase.initializeApp({
-      apiKey: "AIzaSyDMzJ0endDzY-fWZMg87gRY2Uvga9qLt5g",
-      authDomain: "shuttlewebsite.firebaseapp.com",
-      projectId: "shuttlewebsite"
-    });
+    // firebase.initializeApp({
+    //   apiKey: "AIzaSyDMzJ0endDzY-fWZMg87gRY2Uvga9qLt5g",
+    //   authDomain: "shuttlewebsite.firebaseapp.com",
+    //   projectId: "shuttlewebsite"
+    // });
   }
 
   render() {
@@ -103,7 +103,7 @@ class contact extends React.Component {
                   id="message"
                 />
                 <div className="sendButton-contactform">
-                  <SendButton />
+                  <SendButton click={this.handleSubmit}/>
                 </div>
               </form>
             </div>
