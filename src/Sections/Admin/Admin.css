@@ -47,6 +47,6 @@
 
 .admin-section_form--send_button {
   display: grid;
-  margin: 50px;
+  margin: 30px 50px;
   justify-items: center;
 }
