@@ -3,7 +3,11 @@ import React from "react";
 import "./Contact.css";
 import Email from "../../assets/email.png";
 import Phone from "../../assets/phone.png";
+import ThankYou from "../../assets/thankyou-img.png";
+import Smile from "../../assets/smile-img.png";
+
 import firebase from "firebase";
+import Title from "../../components/Title/Title";
 import ScrollableAnchor, { configureAnchors } from "react-scrollable-anchor";
 import SendButton from "../../components/SendButton/SendButton";
 
@@ -29,7 +33,7 @@ class contact extends React.Component {
 
   handleSubmit = event => {
     const { email, emailMessage } = this.state;
-
+    console.log("LIFE IS GOOD");
     const db = firebase.firestore();
 
     this.setState({
@@ -49,21 +53,22 @@ class contact extends React.Component {
   };
 
   componentDidMount() {
-    firebase.initializeApp({
-      apiKey: "AIzaSyDMzJ0endDzY-fWZMg87gRY2Uvga9qLt5g",
-      authDomain: "shuttlewebsite.firebaseapp.com",
-      projectId: "shuttlewebsite"
-    });
+    // firebase.initializeApp({
+    //   apiKey: "AIzaSyDMzJ0endDzY-fWZMg87gRY2Uvga9qLt5g",
+    //   authDomain: "shuttlewebsite.firebaseapp.com",
+    //   projectId: "shuttlewebsite"
+    // });
   }
+
   render() {
     return (
       <ScrollableAnchor id={"Contact"}>
         <div className="Contact-component">
-          <h1 className="contact-header">CONTACT US</h1>
+          <Title text={"Contact Us"}/>
           <div className="contact-body">
             <div className="contact-description">
               <h3>
-                IF YOU HAVE ANY COMMENTS OR SUGESTIONS PLEASE CALL US OR SEND US
+                IF YOU HAVE ANY COMMENTS OR SUGGESTIONS PLEASE CALL US OR SEND US
                 AN EMAIL
               </h3>
 
@@ -98,10 +103,14 @@ class contact extends React.Component {
                   id="message"
                 />
                 <div className="sendButton-contactform">
-                  <SendButton />
+                  <SendButton click={this.handleSubmit}/>
                 </div>
               </form>
             </div>
+          </div>
+          <div className={"thankyou-section"}>  
+            <img className={"thankyou-section-phone"} src={ThankYou} alt=""/>
+            <h1>THANK YOU <img src={Smile} alt=""/></h1>
           </div>
         </div>
       </ScrollableAnchor>
