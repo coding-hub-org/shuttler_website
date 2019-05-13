@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Main from "./Sections/Main/Main";
 import Maps from "./Sections/Maps/Maps";
+import Admin from "./Sections/Admin/Admin";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
@@ -12,6 +13,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Main} />
             <Route path="/maps/" component={Maps} />
+            <Route path="/admin/" component={Admin} />
           </Switch>
         </div>
       </BrowserRouter>
