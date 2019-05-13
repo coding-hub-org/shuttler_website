@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Main from './Sections/Main/Main';
-import Maps from './Sections/Maps/Maps';
+import Main from "./Sections/Main/Main";
+import Maps from "./Sections/Maps/Maps";
 
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -15,7 +15,6 @@ class App extends Component {
           </Switch>
         </div>
       </BrowserRouter>
-      
     );
   }
 }
