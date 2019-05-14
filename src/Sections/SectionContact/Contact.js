@@ -6,7 +6,7 @@ import Phone from "../../assets/phone.png";
 import ThankYou from "../../assets/thankyou-img.png";
 import Smile from "../../assets/smile-img.png";
 
-import firebase from "firebase";
+import firebase from "../../components/Firebase/firebase";
 import Title from "../../components/Title/Title";
 import ScrollableAnchor, { configureAnchors } from "react-scrollable-anchor";
 import SendButton from "../../components/SendButton/SendButton";
@@ -64,12 +64,12 @@ class contact extends React.Component {
     return (
       <ScrollableAnchor id={"Contact"}>
         <div className="Contact-component">
-          <Title text={"Contact Us"}/>
+          <Title text={"Contact Us"} />
           <div className="contact-body">
             <div className="contact-description">
               <h3>
-                IF YOU HAVE ANY COMMENTS OR SUGGESTIONS PLEASE CALL US OR SEND US
-                AN EMAIL
+                IF YOU HAVE ANY COMMENTS OR SUGGESTIONS PLEASE CALL US OR SEND
+                US AN EMAIL
               </h3>
 
               <div className="phone-sec" id="phoneNumDiv">
@@ -103,14 +103,16 @@ class contact extends React.Component {
                   id="message"
                 />
                 <div className="sendButton-contactform">
-                  <SendButton click={this.handleSubmit}/>
+                  <SendButton click={this.handleSubmit} />
                 </div>
               </form>
             </div>
           </div>
-          <div className={"thankyou-section"}>  
-            <img className={"thankyou-section-phone"} src={ThankYou} alt=""/>
-            <h1>THANK YOU <img src={Smile} alt=""/></h1>
+          <div className={"thankyou-section"}>
+            <img className={"thankyou-section-phone"} src={ThankYou} alt="" />
+            <h1>
+              THANK YOU <img src={Smile} alt="" />
+            </h1>
           </div>
         </div>
       </ScrollableAnchor>
