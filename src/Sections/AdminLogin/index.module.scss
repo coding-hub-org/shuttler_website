@@ -1,0 +1,95 @@
+.admin-login--container {
+	min-width: 100vw;
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 50vw 50vw;
+}
+
+.admin-login--form-container {
+	min-height: 100vh;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.admin-login--form-container > div {
+	width: 500px;
+	margin: auto;
+}
+
+.admin-login--form-label {
+	margin-bottom: 15px;
+}
+
+.admin-login--form-input {
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 20px 30px;
+	background-color: #f1f1f1;
+	border-radius: 10px;
+	font-size: 0.9em;
+}
+
+.admin-login--form-input-container {
+	margin: 25px;
+	font-size: 1.6em;
+}
+
+.admin-login--form-button-container > button {
+	margin: 25px;
+	font-size: 1.6em;
+	color: white;
+	border: none;
+	background-color: #ff7e7e;
+	padding: 15px 25px;
+	border-radius: 10px;
+}
+
+.admin-login--image-container {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.admin-login--image {
+	width: 100%;
+}
+
+.admin-login--link-main{
+  padding: 25px;
+}
+
+.red-link-text {
+  text-decoration: underline;
+  text-decoration-color: #ff7e7e;
+  color: #ff7e7e;
+}
+
+@media(max-width: 1350px) {
+  .admin-login--form-container > div{
+    width: 80%;
+  }
+}
+
+@media(max-width: 1000px) {
+  .admin-login--container {
+    grid-template-columns: none;
+  }
+
+  .admin-login--form-container > div {
+    width: 60%;
+  }
+
+  .admin-login--image-container {
+    display: none;
+  }
+}
+
+@media(max-width: 800px) {
+  .admin-login--form-container > div {
+    width: 80%;
+  }
+}
