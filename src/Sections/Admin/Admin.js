@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Admin.css";
 import SendButton from "../../components/SendButton/SendButton";
-import { sendNotification } from "../../components/Firebase/firebase";
+import { sendNotification, signOut } from "../../components/Firebase/firebase";
 import Title from "../../components/Title/Title";
 import NotificationImage from "../../assets/notificatio_image.png";
 
@@ -70,6 +70,7 @@ class Admin extends Component {
           <div className="admin-section_form--col2">
             <div className="admin-section_form--header">
               Please enter all details and click on send
+              <button onClick={(e)=>{signOut();}}> SIGN OUT </button>
             </div>
             <div className="admin-section_form--title">Title</div>
             <form className="admin-section_form--form">

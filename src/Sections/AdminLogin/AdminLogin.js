@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Title from "../../components/Title/Title";
 
 import AdminLoginImage from "../../assets/image_admin_login.svg";
-
+import {signInWithEmailAndPassword} from "../../components/Firebase/firebase";
 import styles from "./index.module.scss";
 
 export default class AdminLogin extends Component {
@@ -10,8 +10,8 @@ export default class AdminLogin extends Component {
 		super(props);
 
 		this.state = {
-			email: "",
-			password: ""
+			email: "kle003@plattsburgh.edu",
+			password: "testpassword"
 		};
 	}
 
@@ -23,9 +23,15 @@ export default class AdminLogin extends Component {
 		console.log(this.state);
 	};
 
-	handleClick = e => {
-		e.preventDefault();
+	handleClick =  (e) => {
 		console.log("login-action");
+		try{
+		signInWithEmailAndPassword(this.state.email,this.state.password);
+		}catch(error){
+			console.log(error);
+		};
+		
+		console.log("finish");
 	};
 
 	render() {
@@ -61,7 +67,7 @@ export default class AdminLogin extends Component {
 							/>
 						</div>
 						<div className={styles["admin-login--form-button-container"]}>
-							<button>LOGIN</button>
+							<button onClick={this.handleClick}>LOGIN</button>
 						</div>
 						<div className={styles["admin-login--link-main"]}>
 							If you have any questions or would like to collaborate with us.
