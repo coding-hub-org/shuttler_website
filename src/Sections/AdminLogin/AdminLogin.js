@@ -55,7 +55,7 @@ export default class AdminLogin extends Component {
 								id="password"
 								className={styles["admin-login--form-input"]}
 								onChange={e => this.handleChange(e)}
-								value={this.state.email}
+								value={this.state.password}
 								type="password"
 								placeholder="**********"
 							/>
