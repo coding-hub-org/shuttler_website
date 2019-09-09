@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^6.0.2",
+    "firebase-admin": "^8.5.0",
     "google-maps-react": "^2.0.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
