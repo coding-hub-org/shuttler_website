@@ -34,5 +34,29 @@ export const sendNotification = (title, message) => {
       console.error("Error adding document: ", error);
     });
 };
+export const signInWithEmailAndPassword= (email,password)=>{
+    getInstance()
+    .auth()
+    .signInWithEmailAndPassword(email,password)
+    .catch(error=>{
+      console.error("Error signing in:",error.code," - ",error.message);
+    })
+}
+export const authStateChange = (fnc)=>{
+  getInstance().auth().onAuthStateChanged(function(user) {
+    if (user) {
+      fnc(true);
+      console.log("Signed in");
+    } else {
+      fnc(false);
+      console.log("No auth");
+    }
+  });
+}
+export const signOut = ()=>{
+  getInstance().auth().signOut().then(
+    ()=>{console.log("Signed Out");}
+  ).catch(error=>{console.error(error);})
+}
 
 export default getInstance();
