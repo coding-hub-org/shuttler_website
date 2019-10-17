@@ -72,6 +72,10 @@
 	color: #ff7e7e;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 @media (max-width: 1350px) {
 	.admin-login--form-container {
 		div {

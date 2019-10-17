@@ -10,8 +10,8 @@ export default class AdminLogin extends Component {
 		super(props);
 
 		this.state = {
-			email: "kle003@plattsburgh.edu",
-			password: "testpassword"
+			email: "",
+			password: ""
 		};
 	}
 
