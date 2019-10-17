@@ -14,6 +14,7 @@ import Lottie from "react-lottie";
 class Admin extends Component {
 	constructor(props) {
 		super(props);
+
 		this.state = {
 			title: "",
 			message: "",
