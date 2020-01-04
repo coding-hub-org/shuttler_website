@@ -24,7 +24,7 @@ class Page1 extends Component {
               </div>
               <div className="download-button__appstore">
                 <div className="download-button__playstore">
-                  <a href="https://apps.apple.com/us/app/shuttler-at-suny-plattsburgh/id1488657658?app=itunes&ign-mpt=uo%3D4">
+                  <a href="https://apps.apple.com/us/app/shuttler-at-suny-plattsburgh/id1488657658">
                     <img src={AppStore} alt="" />
                   </a>
                 </div>
