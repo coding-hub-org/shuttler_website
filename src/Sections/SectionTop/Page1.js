@@ -18,10 +18,16 @@ class Page1 extends Component {
             </div>
             <div className="download-buttons">
               <div className="download-button__playstore">
-                <img src={GooglePlayDownload} alt="" />
+                <a href="https://play.google.com/store/apps/details?id=com.codinghub.shuttler.mobile">
+                  <img src={GooglePlayDownload} alt="" />
+                </a>
               </div>
               <div className="download-button__appstore">
-                <img src={AppStore} alt="" />
+                <div className="download-button__playstore">
+                  <a href="https://apps.apple.com/us/app/shuttler-at-suny-plattsburgh/id1488657658">
+                    <img src={AppStore} alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
