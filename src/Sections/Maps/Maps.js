@@ -1,37 +1,35 @@
-import React, { Component } from "react";
-import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
-import ShuttleIcon from "../../assets/ic_shuttle.png";
-import firebase from "../../components/Firebase/firebase";
+import React, { Component } from 'react'
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
+import ShuttleIcon from '../../assets/ic_shuttle.png'
+import { db } from '../../components/Firebase/firebase'
+import { ref } from 'firebase/database'
 
 class Maps extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       lat: 44.693544,
-      long: -73.46966
-    };
+      long: -73.46966,
+    }
   }
 
   componentDidMount = () => {
-    const database = firebase.database();
-    var starCountRef = database.ref(
-      "Drivers/" + "WeudDDhBAKPeBGLNCwzGvs4vn4F2"
-    );
-    var self = this;
-    starCountRef.on("value", function(snapshot) {
+    var starCountRef = ref(db, 'Drivers/WeudDDhBAKPeBGLNCwzGvs4vn4F2')
+    var self = this
+    starCountRef.on('value', function (snapshot) {
       self.setState({
         lat: snapshot.val().l[0],
-        long: snapshot.val().l[1]
-      });
-    });
-  };
+        long: snapshot.val().l[1],
+      })
+    })
+  }
 
   render() {
     const mapStyles = {
-      width: "100%",
-      height: "100%"
-    };
-    const google = window.google;
+      width: '100%',
+      height: '100%',
+    }
+    const google = window.google
 
     return (
       //44.695756, -73.456463
@@ -41,23 +39,23 @@ class Maps extends Component {
         style={mapStyles}
         initialCenter={{
           lat: 44.693544,
-          lng: -73.46966
+          lng: -73.46966,
         }}
       >
         <Marker
-          title={"The marker`s title will appear as a tooltip."}
-          name={"SOMA"}
+          title={'The marker`s title will appear as a tooltip.'}
+          name={'SOMA'}
           icon={{
             url: ShuttleIcon,
-            scaledSize: new google.maps.Size(32, 45)
+            scaledSize: new google.maps.Size(32, 45),
           }}
           position={{ lat: this.state.lat, lng: this.state.long }}
         />
       </Map>
-    );
+    )
   }
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyBgD068RgxVZl4JPABCxUXl88F-jLjX_nI"
-})(Maps);
+  apiKey: 'AIzaSyBgD068RgxVZl4JPABCxUXl88F-jLjX_nI',
+})(Maps)

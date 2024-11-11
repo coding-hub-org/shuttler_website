@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import "./Page1.css";
-import ImageFile from "../../assets/ic_cellphone.png";
-import ScrollableAnchor, { configureAnchors } from "react-scrollable-anchor";
-import GooglePlayDownload from "../../assets/google-play-badge.png";
-import AppStore from "../../assets/AppStore.png";
+import React, { Component } from 'react'
+import { Element } from 'react-scroll'
+import './Page1.css'
+import ImageFile from '../../assets/ic_cellphone.png'
+import GooglePlayDownload from '../../assets/google-play-badge.png'
+import AppStore from '../../assets/AppStore.png'
 
 class Page1 extends Component {
   render() {
     return (
-      <ScrollableAnchor id={"home-scroll"}>
+      <Element name="home-scroll">
         <div className="Page1-section">
           <div className="containsTitle">
             <div className="title-text">
@@ -35,9 +35,9 @@ class Page1 extends Component {
             <img src={ImageFile} alt="" />
           </div>
         </div>
-      </ScrollableAnchor>
-    );
+      </Element>
+    )
   }
 }
 
-export default Page1;
+export default Page1

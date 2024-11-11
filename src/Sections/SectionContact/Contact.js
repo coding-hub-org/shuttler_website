@@ -1,70 +1,59 @@
-import React from "react";
+import React from 'react'
+import { Element } from 'react-scroll'
 
-import "./Contact.css";
-import Email from "../../assets/email.png";
-import Phone from "../../assets/phone.png";
-import ThankYou from "../../assets/thankyou-img.png";
-import Smile from "../../assets/smile-img.png";
+import './Contact.css'
+import Email from '../../assets/email.png'
+import Phone from '../../assets/phone.png'
+import ThankYou from '../../assets/thankyou-img.png'
+import Smile from '../../assets/smile-img.png'
 
-import firebase from "../../components/Firebase/firebase";
-import Title from "../../components/Title/Title";
-import ScrollableAnchor, { configureAnchors } from "react-scrollable-anchor";
-import SendButton from "../../components/SendButton/SendButton";
+import { firestore } from '../../components/Firebase/firebase'
+import Title from '../../components/Title/Title'
+import SendButton from '../../components/SendButton/SendButton'
+import { collection } from 'firebase/firestore'
 
-class contact extends React.Component {
+class Contact extends React.Component {
   state = {
-    email: "",
-    emailMessage: ""
-  };
+    email: '',
+    emailMessage: '',
+  }
 
-  handleChangeEmail = event => {
+  handleChangeEmail = (event) => {
     this.setState({
-      email: event.target.value
-    });
-  };
+      email: event.target.value,
+    })
+  }
 
-  handleChangeMessage = event => {
+  handleChangeMessage = (event) => {
     this.setState({
-      emailMessage: event.target.value
-    });
+      emailMessage: event.target.value,
+    })
+  }
 
-    //
-  };
-
-  handleSubmit = event => {
-    const { email, emailMessage } = this.state;
-    console.log("LIFE IS GOOD");
-    const db = firebase.firestore();
+  handleSubmit = (event) => {
+    const { email, emailMessage } = this.state
+    console.log('LIFE IS GOOD')
 
     this.setState({
-      email: "",
-      emailMessage: ""
-    });
+      email: '',
+      emailMessage: '',
+    })
 
-    db.collection("ContactShuttler")
+    collection(firestore, 'ContactShuttler')
       .add({
         email: email,
-        emailMesssage: emailMessage
+        emailMesssage: emailMessage,
       })
-
-      .then(function(docRef) {
-        console.log("Done");
-      });
-  };
-
-  componentDidMount() {
-    // firebase.initializeApp({
-    //   apiKey: "AIzaSyDMzJ0endDzY-fWZMg87gRY2Uvga9qLt5g",
-    //   authDomain: "shuttlewebsite.firebaseapp.com",
-    //   projectId: "shuttlewebsite"
-    // });
+      .then(function (docRef) {
+        console.log('Done')
+      })
   }
 
   render() {
     return (
-      <ScrollableAnchor id={"Contact"}>
+      <Element name="Contact">
         <div className="Contact-component">
-          <Title text={"Contact Us"} />
+          <Title text={'Contact Us'} />
           <div className="contact-body">
             <div className="contact-description">
               <h3>
@@ -92,7 +81,7 @@ class contact extends React.Component {
                   placeholder="Email Address"
                   type="text"
                   id="email"
-                />{" "}
+                />{' '}
                 <br /> <br />
                 <p className="message-head">Request</p>
                 <textarea
@@ -108,16 +97,16 @@ class contact extends React.Component {
               </form>
             </div>
           </div>
-          <div className={"thankyou-section"}>
-            <img className={"thankyou-section-phone"} src={ThankYou} alt="" />
+          <div className='thankyou-section'>
+            <img className='thankyou-section-phone' src={ThankYou} alt="" />
             <h1>
               THANK YOU <img src={Smile} alt="" />
             </h1>
           </div>
         </div>
-      </ScrollableAnchor>
-    );
+      </Element>
+    )
   }
 }
 
-export default contact;
+export default Contact
