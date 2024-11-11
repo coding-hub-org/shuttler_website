@@ -1,7 +1,8 @@
 import React from "react";
 import "./SideDrawer.css";
+import { Link } from "react-scroll";
 
-const sideDrawer = props => {
+const SideDrawer = props => {
   let drawerClasses = "side-drawer";
   if (props.show) {
     drawerClasses = "side-drawer open";
@@ -10,21 +11,21 @@ const sideDrawer = props => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <a href="#home-scroll">Home</a>
+          <Link to="home-scroll">Home</Link>
         </li>
         <li>
-          <a href="#about-scroll">About</a>
+          <Link to="about-scroll">About</Link>
         </li>
 
         <li>
-          <a href="#team-scroll">Team</a>
+          <Link to="team-scroll">Team</Link>
         </li>
         <li>
-          <a href="#contact-scroll">Contact</a>
+          <Link to="contact-scroll">Contact</Link>
         </li>
       </ul>
     </nav>
   );
 };
 
-export default sideDrawer;
+export default SideDrawer;

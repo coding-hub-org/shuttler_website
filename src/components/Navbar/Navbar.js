@@ -11,10 +11,10 @@ class Navbar extends Component {
   };
 
   navItems = [
-    { id: "item1", value: "ABOUT", link: "#About" },
-    { id: "item2", value: "TEAM", link: "#Team" },
-    { id: "item3", value: "CONTACT US", link: "#Contact" },
-    { id: "item4", value: "TERM AND CONDITION", link: "/TaC"}
+    { id: "item1", value: "ABOUT", to: "#About" },
+    { id: "item2", value: "TEAM", to: "#Team" },
+    { id: "item3", value: "CONTACT US", to: "#Contact" },
+    { id: "item4", value: "TERM AND CONDITION", href: "/TaC"}
   ];
 
   drawerToggleClickHandler = () => {
